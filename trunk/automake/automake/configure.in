@@ -1,0 +1,22 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ([2.67])
+AC_INIT([countwords], [1.0], [gengyufeng0918@pku.edu.cn])
+AM_INIT_AUTOMAKE(countwords, 1.0)
+AC_CONFIG_SRCDIR([src/lexer.l])
+
+# Checks for programs.
+AC_PROG_CC
+AC_PROG_LEX
+
+# Checks for libraries.
+
+# Checks for header files.
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+
+AC_OUTPUT([Makefile
+		src/Makefile])
