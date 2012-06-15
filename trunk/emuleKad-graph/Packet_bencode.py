@@ -26,8 +26,16 @@ class Bencode:
     def __init__(self):
         self.analysing = Analyser()
         self.ftxt=''
+        
+    # 判断是否是bencode编码(btdht协议)
+    def bencode_handle(self, bencode):
+        if bencode[0] != 'd':
+            return False
+        return True
+        
     #整个bencode包入口
     def bencode_btdht(self, bencode, pac_info, type = 1):
+        self.ftxt.write('==Protocol type: bencode\n')
         self.pac={}    #用一个字典表示一个包
         self.pac['info']=pac_info
         try:
@@ -193,13 +201,6 @@ class Bencode:
             one_byte = bencode[offset]
         return offset+1
     
-
-class packet_info(object):
-    ''''''
-    time=0;    #float number 
-    size=0;
-    pac_num=0;
-    src_ip=''; src_port=0; dst_ip=''; dst_port=0;    
 
 class Analyser:
     '''collect all packets, draw the communication'''
