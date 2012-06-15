@@ -2,6 +2,7 @@
 import struct
 import time
 import thread
+from eDonkeyDispach import * 
 
 UDP_ONLY = 1
 BT_DHT_ONLY = 0
@@ -113,16 +114,23 @@ class Dispach:
                 dst_IP += '.'+str(int(string_data[baseIp+16+ipPart].encode('hex'), 16))
             dst_IP = dst_IP[1:]
             ftxt.write('source: '+src_IP+'    destination: '+dst_IP+'\n')
-            #TCP/UDP层，这里只分析UDP协议
             
+            #TCP/UDP层，这里只分析UDP协议
             ftxt.write('==UDP:\n')
             ftxt.write('    source port: '+str(int(string_data[baseUdp: baseUdp+2].encode('hex'), 16))+
                 '    dst port: '+str(int(string_data[baseUdp+2: baseUdp+4].encode('hex'), 16))+'\n')
             udpLength = int(string_data[baseUdp+4: baseUdp+6].encode('hex'), 16)
             ftxt.write('    length: '+str(udpLength)+'\n')
-            #这里开始解析bencode编码
-            bencode = string_data[baseUdp+8: baseUdp+udpLength]
-            ftxt.write('bencode(raw): '+bencode.encode('hex')+'\n')
+            #这里开始解析具体协议编码(bencode或kademlia)
+            packetData = string_data[baseUdp+8: baseUdp+udpLength]
+            ftxt.write('packetData(raw): '+packetData.encode('hex')+'\n')
+            
+            if packetData[0] == 'e':
+                ftxt.write('this is a bt-dht bencode type data\n')
+                
+            if packetData[0].encode('hex') == 'e4':
+                ftxt.write('this is a eDonkey type data\n')
+                print 'this is a eDonkey type data'
             
             #分析结束
             ftxt.write('\n\n')
