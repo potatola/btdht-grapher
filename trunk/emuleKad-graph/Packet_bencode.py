@@ -3,6 +3,7 @@
 此代码接受一段bencode代码，解析其中含义，分析相互关系
 '''
 from nodeView import *
+from project_definations import *
 import math
 import sys
 import __builtin__
@@ -98,7 +99,7 @@ class Bencode:
         elif key in ['a', 'r']:
             self.pac[key] = 'Dict Value'
         return offset
-    #字符串类型            
+    #字符串类型
     def bencode_string(self, bencode, offset, label, hex=0):
         string_start = offset
         while bencode[offset] != ':':

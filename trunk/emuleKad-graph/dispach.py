@@ -18,7 +18,7 @@ class fake_ftxt:
 
 class Dispach:
 
-    def __init__(self, logLoc, resLoc='result.txt'):
+    def __init__(self, logLoc, resLoc='diapach.log'):
         self.logLoc = logLoc
         self.resLoc = resLoc
         
@@ -28,8 +28,8 @@ class Dispach:
     def work(self, type = 1):
     #type = 0:draw; 1:extract
         fpcap = open(self.logLoc, 'rb')
-        #ftxt = open(self.resLoc,'w')
-        ftxt = fake_ftxt()
+        ftxt = open(self.resLoc,'w')
+        #ftxt = fake_ftxt()
         
         self.bencoder.ftxt = ftxt
 
@@ -132,11 +132,14 @@ class Dispach:
             udpLength = int(string_data[baseUdp+4: baseUdp+6].encode('hex'), 16)
             ftxt.write('    length: '+str(udpLength)+'\n')
             #这里开始解析bencode编码
-            bencode = string_data[baseUdp+8: baseUdp+udpLength]
+            udpData = string_data[baseUdp+8: baseUdp+udpLength]
             # ftxt.write('bencode(raw): '+bencode+'\n')
             #递归解析bencode编码
             #try:
-            self.bencoder.bencode_btdht(bencode, pac_info, type)
+            if self.bencoder.bencode_handle(udpData):
+                self.bencoder.bencode_btdht(udpData, pac_info, type)
+            if self.edonkeyer.dissect_handle(udpData):
+                self.edonkeyer.dissect_edonkey_udp(udpData, pac_info)
             
             #分析结束
             ftxt.write('\n\n')
@@ -148,5 +151,5 @@ class Dispach:
         
         
 if __name__ == '__main__':
-    disp = Dispach('captured.pcap', 'diapach.log')
+    disp = Dispach('captured1.pcap', 'diapach.log')
     disp.work()
