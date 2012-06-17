@@ -8,12 +8,15 @@ import math
 import sys
 import __builtin__
 
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
 
 class Analyser:
     '''collect all packets, draw the communication'''
     def __init__(self, canvas=None, main_window=None, type=1):
-        #self.dlog=open('dialog.txt', 'w')
-        self.dlog=fake_dlog()
     
         self.requests = {}    #存储所有请求的队列
         self.IPs_queried = [] # related dst IPs of one search
@@ -23,8 +26,11 @@ class Analyser:
         self.response_num = 0
         self.current_target = ''#target that most packets currently relate to
         self.last_target = ''
-        self.start_time = 0
+        self.start_time = -1
         self.user_target = ''#target that user choosed
+        
+        self.targets = []
+        self.ip2id = {}
         
         #画布
         if canvas != None:
@@ -43,7 +49,117 @@ class Analyser:
                 self.user_target = str(main_window.List.selectedItems()[0].text())
         else:
             self.user_target = 'af44869af3ac547adc8ee59af38ea0a74b641991'
+            
+    def edonkey_target_list(self, request):
+        target = request['target_id']
+            
+        if not target in self.targets:
+            self.targets.append(target)
+            self.main_window.List.insertRow(self.main_window.ListCount)
+            self.main_window.ListCount += 1
+            newItem = QTableWidgetItem(_fromUtf8(target))
+            self.main_window.List.setItem(self.main_window.ListCount-1, 0, newItem)
+            # newItem = QTableWidgetItem(_fromUtf8('type'))
+            # self.main_window.List.setItem(self.main_window.ListCount-1, 1, newItem)
+            
+            # distance = math.log((int(str(target), 16)^int(str(self.self_id), 16)), 2)
+            # newItem = QTableWidgetItem(_fromUtf8(str(distance)))
+            # self.main_window.List.setItem(self.main_window.ListCount-1, 2, newItem)
+            
+    def edonkey_request(self, request):
+        if request['target_id'] != self.user_target:
+            return
+        elif self.start_time == -1:
+            self.start_time = request['info'].time
+        # 记录被查询节点的ip对应的id号
+        if request['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ]:
+            self.ip2id[request['info'].dst_ip] = request['recipient_id']
+            dst_id = self.ip2id[request['info'].dst_ip]
+        else:
+            dst_id = self.ip2id[request['info'].dst_ip]
+        # draw the requested node
+        if request['info'].dst_ip not in self.nodes_by_ip:
+            tmp_node = Node(self.canvas, Node_color['requested'], self.main_window)
+            self.canvas.scene().addItem(tmp_node)
+            self.nodes_by_ip[request['info'].dst_ip] = tmp_node
+            tx = (request['info'].time - self.start_time) / __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_width']
+            # count log if ty > 1
+            ty = int(dst_id, 16)^int(str(self.user_target), 16)
+            tmp_node.setSelfDate('requested in pac_num', request['info'].pac_num)
+            tmp_node.setSelfDate('ip', request['info'].src_ip)
+            tmp_node.setSelfDate('id', dst_id)
+            tmp_node.data['distance'] = str(int(dst_id  , 16)^int(str(self.user_target), 16)).zfill(40)
+            ty = self.adjust_ty(ty, tx)
+            tmp_node.setPos(tx, ty)
+            src_node = tmp_node
+            
+    def edonkey_response(self, response):
+        if response['target_id'] != self.user_target:
+            return
+        if response['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
+            src_id = self.ip2id[response['info'].src_ip]
+        else:
+            src_id = response['sender_id']
+            
+        # determine the 'src' node
+        if response['info'].src_ip in self.nodes_by_ip: # a node that have been returned earlier
+            src_node = self.nodes_by_ip[response['info'].src_ip]
+            src_node.setInitColor(Node_color['responsed'])
+            src_node.setSelfDate('answered in pac_num', response['info'].pac_num)
+        else:   # new node: 1.host node, 2.incomplete process(missing earlier infomation)
+            tmp_node = Node(self.canvas, Node_color['host'], self.main_window)
+            self.canvas.scene().addItem(tmp_node)
+            self.nodes_by_ip[response['info'].src_ip] = tmp_node
+            tx = (response['info'].time - self.start_time) / __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_width']
+            # count log if ty > 1
+            ty = int(src_id, 16)^int(str(self.user_target), 16)
+            tmp_node.setSelfDate('answered in pac_num', response['info'].pac_num)
+            tmp_node.setSelfDate('ip', response['info'].src_ip)
+            tmp_node.setSelfDate('id', src_id)
+            tmp_node.data['distance'] = str(int(src_id, 16)^int(str(self.user_target), 16)).zfill(40)
+            ty = self.adjust_ty(ty, tx)
+            tmp_node.setPos(tx, ty)
+            src_node = tmp_node
+            
+        # 如果返回的是更近的nodes, 画出这些nodes
+        if response['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
+            src_node.setSelfDate('peers', response['peers'])
+            for peer in response['peers']:
+                if not peer['ip'] in self.nodes_by_ip:
+                    tmp_node = Node(self.canvas, Node_color['returned'], self.main_window)
+                    self.canvas.scene().addItem(tmp_node)
+                    
+                    tmp_node.setSelfDate('returned in pac_num', response['info'].pac_num)
+                    tmp_node.setSelfDate('id', peer['peer_id'])
+                    tmp_node.setSelfDate('ip', peer['ip'])
+                    tmp_node.setSelfDate('udp_port', peer['udp_port'])
+                    tmp_node.setSelfDate('found_time', response['info'].time)
         
+                    tx = (response['info'].time - self.start_time) / __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_width']
+                    # count log if ty > 1
+                    ty = int(str(peer['peer_id']), 16)^int(str(self.user_target), 16)
+                    tmp_node.data['distance'] = ty.__hex__()[2:].zfill(40)
+                    ty = self.adjust_ty(ty, tx)
+                    tmp_node.setPos(tx, ty)
+                
+                    self.nodes_by_ip[peer['ip']] = tmp_node
+                    
+                    self.canvas.scene().addItem(Edge(src_node, tmp_node))
+                else:
+                    self.canvas.scene().addItem(Edge(src_node, self.nodes_by_ip[peer['ip']]))
+                    
+                    
+                    self.canvas.update()
+                    self.main_window.update()
+                    
+        if response['message_type'] in [KADEMLIA_SEARCH_RES, KADEMLIA2_SEARCH_RES]:
+            src_node.setSelfDate('results', response['results'])
+            src_node.setInitColor(Node_color['peers'])
+            
+            
+            
+            
+    # ==============       old       ======================================================================    
     def new_request(self, request):
         if request['q'] == 'ping':    #ignore 'ping' request
             return

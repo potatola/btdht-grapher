@@ -238,6 +238,8 @@ class Node(QtGui.QGraphicsItem):
             col = QtCore.Qt.green
         elif self.color=='blue':
             col = QtCore.Qt.blue
+        elif self.color=='cyan':
+            col = QtCore.Qt.cyan
         else:
             col = self.color
 		
@@ -297,7 +299,7 @@ class Node(QtGui.QGraphicsItem):
         content = ''
         line_count = 0
         for item in self.data:
-            if item=='nodes' or item=='values':
+            if item in ['nodes', 'values', 'peers', 'results']:
                 continue
             content += item+' : '+str(self.data[item])+'\n'
             line_count += 1 
@@ -320,6 +322,26 @@ class Node(QtGui.QGraphicsItem):
                 if not all and line_count >= 16:
                     content += '    ......(click to see all)'
                     return content
+        if 'peers' in self.data:
+            content += '\npeers:\n'
+            line_count += 1 
+            peer_count = 0
+            for peer in self.data['peers']:
+                peer_count += 1
+                content += '    '+str(peer_count)+' : '+peer['peer_id']+'    '+peer['ip']+'    '+str(peer['udp_port'])+'\n'
+                line_count += 1 
+        if 'results' in self.data:
+            content += '\nvalues:\n'
+            line_count += 1 
+            value_count = 0
+            for value in self.data['results']:
+                value_count += 1
+                content += '    '+str(value_count) #+' : '+value['ip']+'   '+str(value['port'])+'\n'
+                line_count += 1 
+                if not all and line_count >= 16:
+                    content += '    ......(click to see all)'
+                    return content
+            
         return content
         
         
