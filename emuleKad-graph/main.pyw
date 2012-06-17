@@ -3,8 +3,8 @@ from PyQt4.QtGui import *
 from ui_mainGui1 import *
 from nodeView import *
 from dispach import *
-from Packet_bencode import *
 from Packet_eDonkey import *
+from packet2image import *
 import traceback
 import socket
 import sys
@@ -56,13 +56,13 @@ class Main(QMainWindow, Ui_MainWindow):
             self.traceButton.setFocusPolicy(Qt.NoFocus)
         self.updateUi()
         
-    @pyqtSignature("QString")        
+    @pyqtSignature("QString")
     def on_IPLineEdit_textEdited(self):
         self.updateUi()
     @pyqtSignature("QString")
     def on_portLineEdit_textEdited(self):
         self.updateUi()
-    @pyqtSignature("QString")    
+    @pyqtSignature("QString")
     def on_traceLineEdit_textEdited(self):
         self.updateUi()
         
@@ -88,7 +88,7 @@ class Main(QMainWindow, Ui_MainWindow):
         try:
             dispachor = Dispach(trace)
             analysor = Analyser(self.Nodes, self)
-            dispachor.bencoder.analysing = analysor
+            dispachor.edonkeyer.analyser = analysor
 
             self.IPLineEdit.setText(dispachor.local_ip())
             dispachor.work()
@@ -110,7 +110,7 @@ class Main(QMainWindow, Ui_MainWindow):
         trace = unicode(trace.toUtf8(),'utf8', 'ignore').encode('gb2312')
         dispachor = Dispach(trace)
         analysor = Analyser(self.Nodes, self, 0)
-        dispachor.bencoder.analysing = analysor
+        dispachor.edonkeyer.analyser = analysor
         
         dispachor.work(0)
         

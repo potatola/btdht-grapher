@@ -3,7 +3,7 @@ import struct
 import time
 import thread
 from project_definations import *
-from Packet_bencode import Bencode
+# from Packet_bencode import Bencode
 from Packet_eDonkey import EDonkey
 from PyQt4.QtGui import QApplication
 
@@ -23,7 +23,7 @@ class Dispach:
         self.logLoc = logLoc
         self.resLoc = resLoc
         
-        self.bencoder = Bencode()
+        # self.bencoder = Bencode()
         self.edonkeyer = EDonkey()
         
     def work(self, type = 1):
@@ -31,8 +31,7 @@ class Dispach:
         fpcap = open(self.logLoc, 'rb')
         ftxt = open(self.resLoc,'w')
         #ftxt = fake_ftxt()
-        
-        self.bencoder.ftxt = ftxt
+        # self.bencoder.ftxt = ftxt
 
         string_data = fpcap.read()
 
@@ -137,10 +136,16 @@ class Dispach:
             # ftxt.write('bencode(raw): '+bencode+'\n')
             #递归解析bencode编码
             #try:
-            if self.bencoder.bencode_handle(udpData):
-                self.bencoder.bencode_btdht(udpData, pac_info, type)
-            if self.edonkeyer.dissect_handle(udpData):
-                self.edonkeyer.dissect_edonkey_udp(udpData, pac_info)
+            # if self.bencoder.bencode_handle(udpData):
+                # self.bencoder.bencode_btdht(udpData, pac_info, type)
+            if pac_info.pac_num == 107:
+                print baseUdp+udpLength, i+packet_len
+                print i, i+ packet_len+16, packet_len, udpLength, string_data[i:i+ packet_len+16]
+            try:
+                if self.edonkeyer.dissect_handle(udpData):
+                    self.edonkeyer.dissect_edonkey_udp(udpData, pac_info, type)
+            except:
+                pass
             
             #分析结束
             ftxt.write('\n\n')
