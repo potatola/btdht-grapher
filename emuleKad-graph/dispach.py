@@ -138,9 +138,9 @@ class Dispach:
             #try:
             # if self.bencoder.bencode_handle(udpData):
                 # self.bencoder.bencode_btdht(udpData, pac_info, type)
-            if pac_info.pac_num == 107:
-                print baseUdp+udpLength, i+packet_len
-                print i, i+ packet_len+16, packet_len, udpLength, string_data.encode('hex')
+            # if pac_info.pac_num == 107:
+                # print baseUdp+udpLength, i+packet_len
+                # print i, i+ packet_len+16, packet_len, udpLength, string_data.encode('hex')
             try:
                 if self.edonkeyer.dissect_handle(udpData):
                     self.edonkeyer.dissect_edonkey_udp(udpData, pac_info, type)
