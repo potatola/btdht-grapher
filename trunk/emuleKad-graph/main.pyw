@@ -3,7 +3,8 @@ from PyQt4.QtGui import *
 from ui_mainGui1 import *
 from nodeView import *
 from dispach import *
-from message import *
+from Packet_bencode import *
+from Packet_eDonkey import *
 import traceback
 import socket
 import sys
@@ -88,7 +89,8 @@ class Main(QMainWindow, Ui_MainWindow):
             dispachor = Dispach(trace)
             analysor = Analyser(self.Nodes, self)
             dispachor.bencoder.analysing = analysor
-        
+
+            self.IPLineEdit.setText(dispachor.local_ip())
             dispachor.work()
         except:
             traceback.print_exc()

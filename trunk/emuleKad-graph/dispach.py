@@ -5,6 +5,7 @@ import thread
 from project_definations import *
 from Packet_bencode import Bencode
 from Packet_eDonkey import EDonkey
+from PyQt4.QtGui import QApplication
 
 UDP_ONLY = 1
 BT_DHT_ONLY = 0
@@ -145,11 +146,51 @@ class Dispach:
             ftxt.write('\n\n')
             i = i+ packet_len+16
             packet_num+=1
+            QApplication.processEvents()
 
         ftxt.close()
         fpcap.close()
         
+    def local_ip(self):
+        fpcap = open(self.logLoc, 'rb')
+        string_data = fpcap.read()
+
+        #pcap文件的数据包解析
+        ips = {}
+        i = 24
+        j = 0
+        while(j<4 and i<len(string_data)):
+            #求出此包的包长len
+            packet_len = struct.unpack('I',string_data[i+12:i+16])[0]
+            baseIp = i+16+14
+            baseUdp = i+16+14+20
+            #尝试分析数据
+            #以太网层
+            #IP，在这里只判断协议类型和双方IP地址，忽略其他信息，忽略IPv6
+            src_IP = ''
+            for ipPart in range(4):
+                src_IP += '.'+str(int(string_data[baseIp+12+ipPart].encode('hex'), 16))
+            src_IP = src_IP[1:]
+            dst_IP = ''
+            for ipPart in range(4):
+                dst_IP += '.'+str(int(string_data[baseIp+16+ipPart].encode('hex'), 16))
+            dst_IP = dst_IP[1:]
+            if src_IP in ips:
+                ips[src_IP] += 1
+            else:
+                ips[src_IP] = 1
+            if dst_IP in ips:
+                ips[dst_IP] += 1
+            else:
+                ips[dst_IP] = 1
+            
+            j += 1
+        for key in ips.keys():
+            if ips[key] == 4:
+                return key
+        print 'error! not fond'
+        return ''
         
 if __name__ == '__main__':
-    disp = Dispach('captured1.pcap', 'diapach.log')
+    disp = Dispach('captured3.pcap', 'diapach.log')
     disp.work()
