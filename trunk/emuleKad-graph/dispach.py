@@ -29,8 +29,8 @@ class Dispach:
     def work(self, type = 1):
     #type = 0:draw; 1:extract
         fpcap = open(self.logLoc, 'rb')
-        ftxt = open(self.resLoc,'w')
-        #ftxt = fake_ftxt()
+        ftxt = fake_ftxt()
+        # ftxt = open(self.resLoc,'w')
         # self.bencoder.ftxt = ftxt
 
         string_data = fpcap.read()
