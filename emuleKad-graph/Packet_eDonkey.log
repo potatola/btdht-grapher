@@ -17,13 +17,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : c13741dd02e400a70383ad196e3fc464
         ip : 238.172.216.216
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : 9eea42dd6b5cd86f7a5b963517790205
         ip : 47.71.100.100
         udp port : 16759
@@ -76,13 +76,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 963c60dd6c5c4b3bfb86ad35ae040b75
         ip : 20.229.246.246
         udp port : 39998
         tcp port : 39999
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 71c160dda967b5ff8265e94f007c5390
         ip : 72.240.9.9
         udp port : 43558
@@ -100,13 +100,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : d0af68ddc6fb777dd2a22a4ff428466e
         ip : 230.115.121.121
         udp port : 17575
         tcp port : 14942
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : d46d6bdd64460a0d7c90de46f7f1b35f
         ip : 177.15.162.162
         udp port : 23560
@@ -124,13 +124,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
         tcp port : 4667
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 963c60dd6c5c4b3bfb86ad35ae040b75
         ip : 20.229.246.246
         udp port : 39998
@@ -148,13 +148,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 06c860ddefe1b5dfbb379cd26864b31f
         ip : 229.173.127.127
         udp port : 7020
         tcp port : 7010
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 2af662dd357175b1e748eeaa27bc513d
         ip : 131.9.31.31
         udp port : 4672
@@ -172,9 +172,34 @@
    sender id : 1fa42bdd4b857d49a9dc4c98ecd812bf
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 1
-      result[0/1]
+      result[1/1]
         kademlia hash : 2fd3a28cd2806fec0c9fbf5471409830
         tag list size : 5
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843085
 
 ====packet No.104  at 7.098293(s)
    src_ip:172.31.202.77    dst_ip:95.31.9.131
@@ -188,13 +213,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
         tcp port : 4667
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 2f2d61dd8b55b5a754957b5cb9d017a0
         ip : 181.147.143.143
         udp port : 21665
@@ -212,90 +237,937 @@
    sender id : 2af662dd357175b1e748eeaa27bc513d
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 10
-      result[0/10]
+      result[1/10]
         kademlia hash : 668e127634e0e931feb1c2e97b426e6e
         tag list size : 9
-      result[1/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3-ËøÖÈõ∑ÂÆ¢.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1142370496
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5702
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1595
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 'û¢Bø^{4ES;côxÃÁÙˆ
+      result[2/10]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 6
-      result[2/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠óa.rm
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16976324
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 0id9¿; ®é◊]Î‡7˚ãˇ¶
+      result[3/10]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 11
-      result[3/10]
+          tag[1/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.HD‰∏≠Â≠ó.rmvb
+          tag[2/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/11]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 30
+          tag[4/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.memehu.com
+          tag[6/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : Áπ´Áπ´Ë™•ËêáËçåÂéô
+          tag[7/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5875
+          tag[8/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1910
+          tag[9/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[10/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50595875
+          tag[11/11]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : Ü€∞o±¯è⁄b)Ø0‹Ji&Ã
+      result[4/10]
         kademlia hash : a6eb35651bc10333aeaaf379465f764c
         tag list size : 5
-      result[4/10]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.DVD‰øÆÊ≠£‰∏≠Â≠ó.rmvb.!mv
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 727977952
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[5/5]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ‹~Ö⁄s´ŒΩÔq=DÈﬁóçÛ?
+      result[5/10]
         kademlia hash : 1fb74c651f7702d786bb2665413d6b7b
         tag list size : 5
-      result[5/10]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.chs.srt
+          tag[2/5]
+            tag type : 8
+            tag name length : 1
+            tag name : 2
+            tag value : 16220
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16976157
+          tag[5/5]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : óè;⁄tGb ©·ƒ√˝|"5¢ÚX…
+      result[6/10]
         kademlia hash : 7c7fea82902567bdc64fa9ecab5182a1
         tag list size : 8
-      result[6/10]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [138film.com]ÈªëË°£‰∫∫3_HD.rmvb.!mv
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5876
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1087
+          tag[6/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[7/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[8/8]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value :  :$[àÿ‰Øä€+cO’4 ¸
+      result[7/10]
         kademlia hash : 929966ada965491256d97b49a66eb9fb
         tag list size : 4
-      result[7/10]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.BD‰∏≠Â≠óËã±ÊñáÈ´òÊ∏ÖÁâà.rmvb.!mv
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[8/10]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 9
-      result[8/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈªëË°£‰∫∫3-Êû™Áâà].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 129
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : #>“ U ≠$˘‘TDà\
+      result[9/10]
         kademlia hash : a5dfd9b565e4a8edeb05cf1c8280ef00
         tag list size : 6
-      result[9/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_DVDscr‰∏≠ÊñáÂ≠óÂπï_È´òÈÄüÂ§áÁî®Áâà.rmvb.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 690151790
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 3
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16974657
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : úäÃü9!iò˝Î)8¸[º°ó÷g
+      result[10/10]
         kademlia hash : 7a3988193019722e8a94a09d8cb1920f
         tag list size : 6
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.XviD.avi
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 964539365
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 57
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : P$‡»+E,f≈'7Öô¥€71ƒ
 
 ====packet No.108  at 8.967052(s)
    src_ip:95.31.9.131    dst_ip:172.31.202.77
    sender id : 2af662dd357175b1e748eeaa27bc513d
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 10
-      result[0/10]
+      result[1/10]
         kademlia hash : 41fd1f9da162ede3b856d9f9d5deaff1
         tag list size : 5
-      result[1/10]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : È£ûÈ∏üÂ®±‰πê[bbs.hdbird.com].ÈªëË°£‰∫∫3.720p.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1658547902
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[2/10]
         kademlia hash : 00729cabfd9cc46e59589bd1eda37b5e
         tag list size : 6
-      result[2/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_TC.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 523187501
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50464720
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : s™
+Cø)çÙò'Ü{°u)=“!
+      result[3/10]
         kademlia hash : f777d7f94339dec6ab107e69617d40ce
         tag list size : 4
-      result[3/10]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.srt
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 85788
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843085
+      result[4/10]
         kademlia hash : bc947db8deea39f018b6a75025eca6cd
         tag list size : 4
-      result[4/10]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.srt
+          tag[2/4]
+            tag type : 8
+            tag name length : 1
+            tag name : 2
+            tag value : 18714
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16975657
+      result[5/10]
         kademlia hash : 4b56e553c3c6000324cef624ffa65255
         tag list size : 6
-      result[5/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3[dvd-mkv][‰∏≠ÊñáÂ≠óÂπï][ÁæéÁâà].mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1038353240
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 223
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 17572398
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ÉÖò‰T¥πÙ ¬tKjŸãıÇ
+      result[6/10]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 9
-      result[6/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 32
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 17241134
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : £Z∑üêldY%®ΩW≈‘†è_∞∏
+      result[7/10]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 9
-      result[7/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈáéÂÖîÂΩ±Èô¢_ytyy.cc]ÈªëË°£‰∫∫3_DVD‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 8
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5870
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 653
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 33687004
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : …ÕÒX±úîÔﬂ”Ã™⁄Ù~i≤‰
+      result[8/10]
         kademlia hash : 2fd3a28cd2806fec0c9fbf5471409830
         tag list size : 9
-      result[8/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_Men.in.Black.3_2012_TS.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 41
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 733
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 84283796
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ô“@ªa@Pääyze\>è
+      result[9/10]
         kademlia hash : d1ee35dc73a12fb4901b669cb4f09470
         tag list size : 9
-      result[9/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 694093560
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 7
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 899
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 67373841
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 
+Ù∂Ã6£ﬂ¸Ú‡áN±°ép”9
+      result[10/10]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 6
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 34615424
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : kI<ÒÇ[¨'ûØı/÷ÎXÉ1Ûœ
 
 ====packet No.109  at 9.054847(s)
    src_ip:95.31.9.131    dst_ip:172.31.202.77
    sender id : 2af662dd357175b1e748eeaa27bc513d
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 4
-      result[0/4]
+      result[1/4]
         kademlia hash : b36e1cd6254c22ea365ba08117e7e7b1
         tag list size : 8
-      result[1/4]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_MIBÊòüÈôÖÊàòË≠¶3_ÈªëË∂ÖÁâπË≠¶ÁªÑ3_TSÊä¢ÂÖàÁâà‰∏≠ÊñáÂ≠óÂπï.rmvb.!mv
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 733
+          tag[6/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[7/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[8/8]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ˚H∂^ ZfOÅg‹BEÌ≤ØÚ°&
+      result[2/4]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 9
-      result[2/4]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 12
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 17572481
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ˛≥8óπ§6ê∏/&@≤èŸˇ!
+      result[3/4]
         kademlia hash : eb439e81457a3e85f57591a903e5ad8d
         tag list size : 5
-      result[3/4]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_HD.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 26
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[4/4]
         kademlia hash : ce8d57fc18951909ea12977ab38b25bb
         tag list size : 11
+          tag[1/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.Ê∏ÖÊô∞TSËã±ËØ≠‰∏≠Â≠ó.rmvb
+          tag[2/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 560499751
+          tag[3/11]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.3i8i.netÔ†£ÈÖêÂ†§Ôõá
+          tag[6/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : www.114dy.netÔ†£ÈÖêÂ†§Ôõá
+          tag[7/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5821
+          tag[8/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 623
+          tag[9/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[10/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50596542
+          tag[11/11]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ≤¿”‘'∂W≥b∫¨¿hmªü
 
 ====packet No.110  at 9.126527(s)
    src_ip:172.31.202.77    dst_ip:115.192.229.215
@@ -316,13 +1188,13 @@
     message type : KADEMLIA_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
         tcp port : 4667
         kad version : 0
-      peer[1/2]
+      peer[2/2]
         peer id : 2f2d61dd8b55b5a754957b5cb9d017a0
         ip : 181.147.143.143
         udp port : 21665
@@ -336,48 +1208,458 @@
    src_ip:115.192.229.215    dst_ip:172.31.202.77
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 14
-      result[0/14]
+      result[1/14]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 4
-      result[1/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠óa.rm
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[2/14]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 9
-      result[2/14]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.HD‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 32
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.memehu.com
+          tag[6/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : Áπ´Áπ´Ë™•ËêáËçåÂéô
+          tag[7/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5875
+          tag[8/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1910
+          tag[9/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+      result[3/14]
         kademlia hash : 7c7fea82902567bdc64fa9ecab5182a1
         tag list size : 6
-      result[3/14]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [138film.com]ÈªëË°£‰∫∫3_HD.rmvb.!mv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5876
+          tag[5/6]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1087
+          tag[6/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+      result[4/14]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 7
-      result[4/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈªëË°£‰∫∫3-Êû™Áâà].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+      result[5/14]
         kademlia hash : 7a3988193019722e8a94a09d8cb1920f
         tag list size : 7
-      result[5/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.XviD.avi
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 964539365
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 211
+            tag value : 19
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1372
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : wmv3
+      result[6/14]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 7
-      result[6/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 57
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+      result[7/14]
         kademlia hash : 4b56e553c3c6000324cef624ffa65255
         tag list size : 4
-      result[7/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3[dvd-mkv][‰∏≠ÊñáÂ≠óÂπï][ÁæéÁâà].mkv
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1038353240
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 104
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[8/14]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 5
-      result[8/14]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈáéÂÖîÂΩ±Èô¢_ytyy.cc]ÈªëË°£‰∫∫3_DVD‰∏≠Â≠ó.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 11
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 4
+            tag value : rmvb
+      result[9/14]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 4
-      result[9/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 104
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[10/14]
         kademlia hash : d1ee35dc73a12fb4901b669cb4f09470
         tag list size : 5
-      result[10/14]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠ó.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 694093560
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 4
+            tag value : rmvb
+      result[11/14]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 7
-      result[11/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+      result[12/14]
         kademlia hash : 8e5a073088f7de5ff203596a51b414af
         tag list size : 4
-      result[12/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.mp4
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 423058832
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[13/14]
         kademlia hash : eb439e81457a3e85f57591a903e5ad8d
         tag list size : 4
-      result[13/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_HD.rmvb
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 26
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[14/14]
         kademlia hash : ce8d57fc18951909ea12977ab38b25bb
         tag list size : 9
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.Ê∏ÖÊô∞TSËã±ËØ≠‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 560499751
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 48
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.3i8i.netËç£Ë™âÂá∫ÂìÅ
+          tag[6/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : www.114dy.netËç£Ë™âÂá∫ÂìÅ
+          tag[7/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5821
+          tag[8/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 623
+          tag[9/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
 
 ====packet No.117  at 11.154192(s)
    src_ip:172.31.202.77    dst_ip:109.100.40.249
@@ -398,13 +1680,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : a6772bddeccbfd8c7ffcb22161c9ac02
         ip : 46.82.119.119
         udp port : 56049
         tcp port : 6766
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : b6ab8add282cd673e686dc7dc28a48ed
         ip : 89.214.221.221
         udp port : 4672
@@ -422,13 +1704,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 92fd63dd258fec9b6a2f23b0cce59014
         ip : 74.183.153.153
         udp port : 46449
         tcp port : 11045
         kad version : 7
-      peer[1/2]
+      peer[2/2]
         peer id : b8d263ddab44184ef37ba5853a942cee
         ip : 233.196.158.158
         udp port : 4672
@@ -449,30 +1731,295 @@
    sender id : c13741dd02e400a70383ad196e3fc464
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 8
-      result[0/8]
+      result[1/8]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 8
-      result[1/8]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [√©¬ª¬ë√®¬°¬£√§¬∫¬∫3-√¶¬û¬™√ß¬â¬à].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 8
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+      result[2/8]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 8
-      result[2/8]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 43
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[3/8]
         kademlia hash : 33208637b34b21c8da6591eac85a1689
         tag list size : 5
-      result[3/8]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3 Men In Black 3 2012 Ts.dsm
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 557055775
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Audio
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843002
+      result[4/8]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 5
-      result[4/8]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [√©¬á¬é√•¬Ö¬î√•¬Ω¬±√©¬ô¬¢_ytyy.cc]√©¬ª¬ë√®¬°¬£√§¬∫¬∫3_DVD√§¬∏¬≠√•¬≠¬ó.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[5/8]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 5
-      result[5/8]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/5]
+            tag type : 8
+            tag name length : 1
+            tag name : 21
+            tag value : 377
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+      result[6/8]
         kademlia hash : 2fd3a28cd2806fec0c9fbf5471409830
         tag list size : 8
-      result[6/8]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3_Men.in.Black.3_2012_TS.rmvb
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 32
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 733
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 117638870
+      result[7/8]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 10
-      result[7/8]
+          tag[1/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [√®¬ø¬Ö√©¬õ¬∑√§¬∏¬ã√®¬Ω¬Ωwww.2tu.cc]√©¬ª¬ë√®¬°¬£√§¬∫¬∫3.HD√§¬∏¬≠√•¬≠¬ó.rmvb
+          tag[2/10]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/10]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 145
+          tag[4/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.memehu.com
+          tag[6/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : √ß¬π¬´√ß¬π¬´√®¬™¬•√®¬ê¬á√®¬ç¬å√•¬é¬ô
+          tag[7/10]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5875
+          tag[8/10]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1910
+          tag[9/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[10/10]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16975824
+      result[8/8]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 4
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3.TS√©¬´¬ò√¶¬∏¬Ö√ß¬â¬à√§¬∏¬≠√•¬≠¬óa.rm
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
 
 ====packet No.125  at 13.182049(s)
    src_ip:172.31.202.77    dst_ip:79.158.196.233
@@ -493,13 +2040,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : ed6d61dd33c40a310c1888bee789d7f6
         ip : 70.79.213.213
         udp port : 23311
         tcp port : 10726
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
@@ -517,13 +2064,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : ed6d61dd33c40a310c1888bee789d7f6
         ip : 14.134.197.197
         udp port : 21630
         tcp port : 11983
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
@@ -562,43 +2109,258 @@
    sender id : b8d263ddab44184ef37ba5853a942cee
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 4
-      result[0/4]
+      result[1/4]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 9
-      result[1/4]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : £Z∑üêldY%®ΩW≈‘†è_∞∏
+      result[2/4]
         kademlia hash : a51948e9eec442fe24269586a2748a4a
         tag list size : 5
-      result[2/4]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.rar.torrent
+          tag[2/5]
+            tag type : 8
+            tag name length : 1
+            tag name : 2
+            tag value : 64844
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[5/5]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ‰ïﬁ◊Ìøµ_å¡∞õ ©¶˘ãiO
+      result[3/4]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 9
-      result[3/4]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ˛≥8óπ§6ê∏/&@≤èŸˇ!
+      result[4/4]
         kademlia hash : eb439e81457a3e85f57591a903e5ad8d
         tag list size : 5
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_HD.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 26
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
 
 ====packet No.135  at 14.487221(s)
    src_ip:92.129.117.147    dst_ip:172.31.202.77
    sender id : c4386eddc068ae9314707617b98673bd
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 2
-      result[0/2]
+      result[1/2]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 9
-      result[1/2]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 13
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 34085258
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 	˛≥8óπ§6ê∏/&@≤èŸˇ!
+      result[2/2]
         kademlia hash : ce8d57fc18951909ea12977ab38b25bb
         tag list size : 6
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.Ê∏ÖÊô∞TSËã±ËØ≠‰∏≠Â≠ó.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 560499751
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 16
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16909788
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ≤¿”‘'∂W≥b∫¨¿hmªü
 
 ====packet No.136  at 14.541622(s)
    src_ip:87.221.214.89    dst_ip:172.31.202.77
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : cae661dd4c81029e1a3661f47a6c6454
         ip : 250.8.44.44
         udp port : 29936
         tcp port : 26766
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : bc9262ddfcd2c9f881157dc8f9761e8a
         ip : 215.229.192.192
         udp port : 4672
@@ -616,13 +2378,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : ed6d61dd33c40a310c1888bee789d7f6
         ip : 70.79.213.213
         udp port : 23311
         tcp port : 10726
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
@@ -640,36 +2402,401 @@
    sender id : a18762dd63c329e6c5a37b4bb5dd0fc2
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 10
-      result[0/10]
+      result[1/10]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 6
-      result[1/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠óa.rm
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 125
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 0id9¿; ®é◊]Î‡7˚ãˇ¶
+      result[2/10]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 6
-      result[2/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.HD‰∏≠Â≠ó.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 24
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50530756
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : Ü€∞o±¯è⁄b)Ø0‹Ji&Ã
+      result[3/10]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 8
-      result[3/10]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈªëË°£‰∫∫3-Êû™Áâà].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 103
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[4/10]
         kademlia hash : 7a3988193019722e8a94a09d8cb1920f
         tag list size : 9
-      result[4/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.XviD.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 964539365
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 60
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 211
+            tag value : 19
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1372
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : wmv3
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : P$‡»+E,f≈'7Öô¥€71ƒ
+      result[5/10]
         kademlia hash : a5dfd9b565e4a8edeb05cf1c8280ef00
         tag list size : 9
-      result[5/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_DVDscr‰∏≠ÊñáÂ≠óÂπï_È´òÈÄüÂ§áÁî®Áâà.rmvb.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 690151790
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5498
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 899
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843002
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : úäÃü9!iò˝Î)8¸[º°ó÷g
+      result[6/10]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 9
-      result[6/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 211
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : £Z∑üêldY%®ΩW≈‘†è_∞∏
+      result[7/10]
         kademlia hash : 4b56e553c3c6000324cef624ffa65255
         tag list size : 6
-      result[7/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3[dvd-mkv][‰∏≠ÊñáÂ≠óÂπï][ÁæéÁâà].mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1038353240
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 33819326
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ÉÖò‰T¥πÙ ¬tKjŸãıÇ
+      result[8/10]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 6
-      result[8/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈáéÂÖîÂΩ±Èô¢_ytyy.cc]ÈªëË°£‰∫∫3_DVD‰∏≠Â≠ó.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 11
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 4
+            tag value : rmvb
+          tag[6/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[9/10]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 6
-      result[9/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16909538
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : kI<ÒÇ[¨'ûØı/÷ÎXÉ1Ûœ
+      result[10/10]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 8
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 14
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
 
 ====packet No.143  at 16.224249(s)
    src_ip:172.31.202.77    dst_ip:81.37.27.173
@@ -683,13 +2810,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 1e2d75dd158ead3afbad069918492b99
         ip : 200.18.21.21
         udp port : 43595
         tcp port : 41509
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : ce3f5fdd4e1b1b1f481389ab3794dc13
         ip : 97.44.222.222
         udp port : 7700
@@ -714,13 +2841,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : e24d51ddf5d26da8c89859cf7eac20e6
         ip : 194.72.238.238
         udp port : 5155
         tcp port : 5145
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : 5cf3e6dde0c513c6856f438b7de9df24
         ip : 22.119.11.11
         udp port : 4672
@@ -752,13 +2879,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 86d91edd96b9d4031e0673b90686b8f5
         ip : 91.5.25.25
         udp port : 25624
         tcp port : 5515
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 7a95ebdfdb17611a7bcdca3d0aee3608
         ip : 238.2.75.75
         udp port : 3417
@@ -797,13 +2924,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 9698dddde16a425fed464a9f0afe3921
         ip : 2.249.108.108
         udp port : 37944
         tcp port : 47728
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : a3b61bdc1ece81ccc02dfc8f69bd9384
         ip : 177.32.125.125
         udp port : 4672
@@ -821,13 +2948,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 67e679df1a75579529c2dde95eba6fd7
         ip : 191.230.44.44
         udp port : 1052
         tcp port : 36504
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : d94032de5d4298aec4baaccfcafae880
         ip : 136.25.33.33
         udp port : 52300
@@ -845,13 +2972,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : e56764df4e7602984c43a3794bb87c7c
         ip : 9.113.229.229
         udp port : 26562
         tcp port : 26552
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : 0e96f7df6a8beaec66ee4f86c8144dd3
         ip : 65.136.37.37
         udp port : 4590
@@ -886,13 +3013,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 9c1072dce5da7de2cc2588bdb7f7311b
         ip : 4.76.161.161
         udp port : 37897
         tcp port : 61958
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : b1b7afdc5c30ce55317ca690c308e71d
         ip : 177.105.248.248
         udp port : 51911
@@ -978,25 +3105,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a70e819d6aa06750d9ff94d900ebf92d
         ip : 101.118.243.243
         udp port : 16930
         tcp port : 10241
         kad version : 4
-      peer[1/4]
+      peer[2/4]
         peer id : cad426960577d3a49521d4b482d1c98c
         ip : 194.82.89.89
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[2/4]
+      peer[3/4]
         peer id : 75b0879636786a33267c56faa815a294
         ip : 67.57.170.170
         udp port : 30530
         tcp port : 30520
         kad version : 9
-      peer[3/4]
+      peer[4/4]
         peer id : 6e998696ec0207ca21e02555b2c76aeb
         ip : 254.248.149.149
         udp port : 4668
@@ -1018,67 +3145,67 @@
     message type : KADEMLIA2_RES
     target id : 0876111f1d9556bca506ca696e1fab83
     peer list size : 11
-      peer[0/11]
+      peer[1/11]
         peer id : 830f191f23a3a11675d9db6a407d0fb1
         ip : 126.146.65.65
         udp port : 45152
         tcp port : 8449
         kad version : 9
-      peer[1/11]
+      peer[2/11]
         peer id : a155301f9963f4c6a07f540d0f54e599
         ip : 237.37.44.44
         udp port : 4672
         tcp port : 4662
         kad version : 9
-      peer[2/11]
+      peer[3/11]
         peer id : eab15e1fa79aea7e1fed5899b5b53279
         ip : 166.2.70.70
         udp port : 26729
         tcp port : 26729
         kad version : 8
-      peer[3/11]
+      peer[4/11]
         peer id : ba7d4b1f3511febbc78916dd82a4857b
         ip : 10.149.2.2
         udp port : 22824
         tcp port : 11846
         kad version : 4
-      peer[4/11]
+      peer[5/11]
         peer id : 45624b1f7910d803277749fee8077c5d
         ip : 169.105.58.58
         udp port : 18433
         tcp port : 54677
         kad version : 7
-      peer[5/11]
+      peer[6/11]
         peer id : 5023711f0ef81313a6feef956bd245a8
         ip : 89.131.60.60
         udp port : 19698
         tcp port : 26701
         kad version : 9
-      peer[6/11]
+      peer[7/11]
         peer id : 5f96731f4c61f4da83f033a2162a9cd3
         ip : 240.13.206.206
         udp port : 4672
         tcp port : 4662
         kad version : 9
-      peer[7/11]
+      peer[8/11]
         peer id : 9309781f858c5e7e719e1c0dae33493f
         ip : 189.244.52.52
         udp port : 1997
         tcp port : 1977
         kad version : 9
-      peer[8/11]
+      peer[9/11]
         peer id : 13636d1f23b15bb80cef1ee01a61bb72
         ip : 88.246.32.32
         udp port : 23048
         tcp port : 9708
         kad version : 4
-      peer[9/11]
+      peer[10/11]
         peer id : 1a8c6d1f44745644916f3807a8fef4d3
         ip : 54.19.58.58
         udp port : 5629
         tcp port : 5619
         kad version : 8
-      peer[10/11]
+      peer[11/11]
         peer id : 990d901f7ad55a1aa9b4ebc04d16bf57
         ip : 57.169.172.172
         udp port : 7591
@@ -1097,67 +3224,67 @@
     message type : KADEMLIA2_RES
     target id : 0876111f1d9556bca506ca696e1fab83
     peer list size : 11
-      peer[0/11]
+      peer[1/11]
         peer id : 4437111fd4377a52d8c3782edc484367
         ip : 181.148.176.176
         udp port : 24972
         tcp port : 10465
         kad version : 4
-      peer[1/11]
+      peer[2/11]
         peer id : c538111ff241ffc61ab6f1589c78dd9e
         ip : 149.64.216.216
         udp port : 3758
         tcp port : 3757
         kad version : 9
-      peer[2/11]
+      peer[3/11]
         peer id : df28111fb09456716119a1cd2b6336b9
         ip : 182.87.5.5
         udp port : 64990
         tcp port : 13472
         kad version : 9
-      peer[3/11]
+      peer[4/11]
         peer id : ea05111f04b83f9802b458d42891bcbe
         ip : 38.182.175.175
         udp port : 4648
         tcp port : 56087
         kad version : 9
-      peer[4/11]
+      peer[5/11]
         peer id : feea111f979341d7f312cd8f4a2f0d30
         ip : 126.149.186.186
         udp port : 1130
         tcp port : 11782
         kad version : 4
-      peer[5/11]
+      peer[6/11]
         peer id : d19a111f1d5803e1552cafb3628f1e2d
         ip : 76.237.64.64
         udp port : 20025
         tcp port : 12348
         kad version : 4
-      peer[6/11]
+      peer[7/11]
         peer id : c886111fba5ff28fc8fdbcacbaa45ce6
         ip : 117.128.114.114
         udp port : 1701
         tcp port : 1723
         kad version : 9
-      peer[7/11]
+      peer[8/11]
         peer id : 7985111ff3418ded3440af3c42385055
         ip : 244.84.181.181
         udp port : 61270
         tcp port : 16378
         kad version : 9
-      peer[8/11]
+      peer[9/11]
         peer id : d580111f4212220bbe7e2ac764b366af
         ip : 80.75.34.34
         udp port : 16905
         tcp port : 38060
         kad version : 7
-      peer[9/11]
+      peer[10/11]
         peer id : ed61101fad9a15004efe1dbe6f1cd3ba
         ip : 230.176.224.224
         udp port : 13629
         tcp port : 14206
         kad version : 4
-      peer[10/11]
+      peer[11/11]
         peer id : f646101f3fd2479cbb8a8a4e22a72b19
         ip : 143.235.17.17
         udp port : 24362
@@ -1190,25 +3317,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : 09421f9dddc2de06c50e7184e3ffd333
         ip : 31.170.45.45
         udp port : 4679
         tcp port : 4669
         kad version : 8
-      peer[1/4]
+      peer[2/4]
         peer id : a33d1f9d8b6e93077fdb584d7f24d4a8
         ip : 155.189.38.38
         udp port : 50705
         tcp port : 2321
         kad version : 7
-      peer[2/4]
+      peer[3/4]
         peer id : 25251f9d18eda2e2d5b34964b9dfe139
         ip : 29.166.3.3
         udp port : 34387
         tcp port : 10726
         kad version : 4
-      peer[3/4]
+      peer[4/4]
         peer id : 8cfb1e9dd6d149f9b0d880a39ad18291
         ip : 32.59.144.144
         udp port : 1811
@@ -1237,25 +3364,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : 87455d9d7fe1527e4e44396ed4128c60
         ip : 70.83.80.80
         udp port : 21390
         tcp port : 14390
         kad version : 4
-      peer[1/4]
+      peer[2/4]
         peer id : 0b26ab9d53eebf7c8c49fd6b732d82cd
         ip : 33.26.255.255
         udp port : 63212
         tcp port : 41396
         kad version : 9
-      peer[2/4]
+      peer[3/4]
         peer id : 21b5fb9d7999923ec5e2b35ed01e3ec2
         ip : 104.233.134.134
         udp port : 45822
         tcp port : 4662
         kad version : 8
-      peer[3/4]
+      peer[4/4]
         peer id : 9c4d7f9c0b086b2632b71d4168627947
         ip : 199.145.24.24
         udp port : 4672
@@ -1289,25 +3416,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : 7ae6159d5d5feb96a32e2742fc9ef696
         ip : 80.45.250.250
         udp port : 23561
         tcp port : 9833
         kad version : 4
-      peer[1/4]
+      peer[2/4]
         peer id : 98f6059db6f7b3858698e206269485bd
         ip : 205.46.252.252
         udp port : 56662
         tcp port : 13309
         kad version : 4
-      peer[2/4]
+      peer[3/4]
         peer id : a75d039d0432c7f6afb72e7984ecc098
         ip : 95.54.84.84
         udp port : 6889
         tcp port : 6879
         kad version : 9
-      peer[3/4]
+      peer[4/4]
         peer id : 2a7f359d7f24d3ede7ad676952cdbe20
         ip : 159.81.130.130
         udp port : 4672
@@ -1335,25 +3462,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a33d1f9d8b6e93077fdb584d7f24d4a8
         ip : 155.189.38.38
         udp port : 50705
         tcp port : 2321
         kad version : 7
-      peer[1/4]
+      peer[2/4]
         peer id : 64121f9d926ec5de1e468ea9a3c84c27
         ip : 237.83.47.47
         udp port : 60002
         tcp port : 54940
         kad version : 9
-      peer[2/4]
+      peer[3/4]
         peer id : 6a241d9df47cf7b47198c1a3237ea9f6
         ip : 146.164.142.142
         udp port : 37192
         tcp port : 10319
         kad version : 4
-      peer[3/4]
+      peer[4/4]
         peer id : e5e11c9d528f508b9f45c3ebcb0431a3
         ip : 98.227.145.145
         udp port : 7124
@@ -1389,25 +3516,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a4f81f9dc7335ad56714c81107bcea62
         ip : 126.41.12.12
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[1/4]
+      peer[2/4]
         peer id : ace31f9d2e7703db4e472b07846ff21f
         ip : 157.252.109.109
         udp port : 4670
         tcp port : 4660
         kad version : 8
-      peer[2/4]
+      peer[3/4]
         peer id : e9d31f9dd7ea6580b83a732c4a9448e2
         ip : 108.84.168.168
         udp port : 59645
         tcp port : 4662
         kad version : 9
-      peer[3/4]
+      peer[4/4]
         peer id : 387a1f9d0cb7573f4d6e6b5da30195aa
         ip : 69.33.94.94
         udp port : 16018
@@ -1422,34 +3549,79 @@
    sender id : 826b1a9d6f04a27beda8b11ac31d2f11
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     result list size : 1
-      result[0/1]
+      result[1/1]
         kademlia hash : 7b40e04e734c0ec0eedb11216d6f907e
         tag list size : 9
+          tag[1/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1658547902
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 254
+            tag value : 1915423605
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 255
+            tag value : 3
+          tag[4/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 251
+            tag value : 1810493279
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 250
+            tag value : 16711
+          tag[6/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 248
+            tag value : F818F57ADEEC566A1F7C40F4BDB9EA68
+          tag[7/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 253
+            tag value : 4294967295
+          tag[8/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 243
+            tag value : 3
+          tag[9/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 252
+            tag value : 1025
 
 ====packet No.228  at 95.335820(s)
    src_ip:114.43.111.34    dst_ip:172.31.202.77
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a4f81f9dc7335ad56714c81107bcea62
         ip : 126.41.12.12
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[1/4]
+      peer[2/4]
         peer id : 387a1f9d0cb7573f4d6e6b5da30195aa
         ip : 23.248.96.96
         udp port : 21679
         tcp port : 10275
         kad version : 4
-      peer[2/4]
+      peer[3/4]
         peer id : 58741f9d331768b7885aab18059d7801
         ip : 39.13.179.179
         udp port : 16508
         tcp port : 8996
         kad version : 4
-      peer[3/4]
+      peer[4/4]
         peer id : 09421f9dddc2de06c50e7184e3ffd333
         ip : 31.170.45.45
         udp port : 4679
@@ -1471,25 +3643,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a0409b99db7293defcf3201e2ca7aec6
         ip : 36.94.180.180
         udp port : 60489
         tcp port : 60479
         kad version : 9
-      peer[1/4]
+      peer[2/4]
         peer id : 73bbbc9982af77249876ff6972c15244
         ip : 241.197.217.217
         udp port : 21775
         tcp port : 21775
         kad version : 8
-      peer[2/4]
+      peer[3/4]
         peer id : 24ae849866641067bd2d34f5976d8eed
         ip : 24.153.39.39
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[3/4]
+      peer[4/4]
         peer id : accd8f9a36d04d78eb9f2765f7f2bd1b
         ip : 139.240.224.224
         udp port : 19229
@@ -1548,13 +3720,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : c13741dd02e400a70383ad196e3fc464
         ip : 238.172.216.216
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : 9eea42dd6b5cd86f7a5b963517790205
         ip : 47.71.100.100
         udp port : 16759
@@ -1607,13 +3779,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 963c60dd6c5c4b3bfb86ad35ae040b75
         ip : 20.229.246.246
         udp port : 39998
         tcp port : 39999
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 71c160dda967b5ff8265e94f007c5390
         ip : 72.240.9.9
         udp port : 43558
@@ -1631,13 +3803,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : d0af68ddc6fb777dd2a22a4ff428466e
         ip : 230.115.121.121
         udp port : 17575
         tcp port : 14942
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : d46d6bdd64460a0d7c90de46f7f1b35f
         ip : 177.15.162.162
         udp port : 23560
@@ -1655,13 +3827,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
         tcp port : 4667
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 963c60dd6c5c4b3bfb86ad35ae040b75
         ip : 20.229.246.246
         udp port : 39998
@@ -1679,13 +3851,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 06c860ddefe1b5dfbb379cd26864b31f
         ip : 229.173.127.127
         udp port : 7020
         tcp port : 7010
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 2af662dd357175b1e748eeaa27bc513d
         ip : 131.9.31.31
         udp port : 4672
@@ -1703,9 +3875,34 @@
    sender id : 1fa42bdd4b857d49a9dc4c98ecd812bf
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 1
-      result[0/1]
+      result[1/1]
         kademlia hash : 2fd3a28cd2806fec0c9fbf5471409830
         tag list size : 5
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843085
 
 ====packet No.104  at 7.098293(s)
    src_ip:172.31.202.77    dst_ip:95.31.9.131
@@ -1719,13 +3916,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
         tcp port : 4667
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 2f2d61dd8b55b5a754957b5cb9d017a0
         ip : 181.147.143.143
         udp port : 21665
@@ -1743,90 +3940,937 @@
    sender id : 2af662dd357175b1e748eeaa27bc513d
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 10
-      result[0/10]
+      result[1/10]
         kademlia hash : 668e127634e0e931feb1c2e97b426e6e
         tag list size : 9
-      result[1/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3-ËøÖÈõ∑ÂÆ¢.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1142370496
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5702
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1595
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 'û¢Bø^{4ES;côxÃÁÙˆ
+      result[2/10]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 6
-      result[2/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠óa.rm
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16976324
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 0id9¿; ®é◊]Î‡7˚ãˇ¶
+      result[3/10]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 11
-      result[3/10]
+          tag[1/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.HD‰∏≠Â≠ó.rmvb
+          tag[2/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/11]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 30
+          tag[4/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.memehu.com
+          tag[6/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : Áπ´Áπ´Ë™•ËêáËçåÂéô
+          tag[7/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5875
+          tag[8/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1910
+          tag[9/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[10/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50595875
+          tag[11/11]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : Ü€∞o±¯è⁄b)Ø0‹Ji&Ã
+      result[4/10]
         kademlia hash : a6eb35651bc10333aeaaf379465f764c
         tag list size : 5
-      result[4/10]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.DVD‰øÆÊ≠£‰∏≠Â≠ó.rmvb.!mv
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 727977952
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[5/5]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ‹~Ö⁄s´ŒΩÔq=DÈﬁóçÛ?
+      result[5/10]
         kademlia hash : 1fb74c651f7702d786bb2665413d6b7b
         tag list size : 5
-      result[5/10]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.chs.srt
+          tag[2/5]
+            tag type : 8
+            tag name length : 1
+            tag name : 2
+            tag value : 16220
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16976157
+          tag[5/5]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : óè;⁄tGb ©·ƒ√˝|"5¢ÚX…
+      result[6/10]
         kademlia hash : 7c7fea82902567bdc64fa9ecab5182a1
         tag list size : 8
-      result[6/10]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [138film.com]ÈªëË°£‰∫∫3_HD.rmvb.!mv
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5876
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1087
+          tag[6/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[7/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[8/8]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value :  :$[àÿ‰Øä€+cO’4 ¸
+      result[7/10]
         kademlia hash : 929966ada965491256d97b49a66eb9fb
         tag list size : 4
-      result[7/10]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.BD‰∏≠Â≠óËã±ÊñáÈ´òÊ∏ÖÁâà.rmvb.!mv
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[8/10]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 9
-      result[8/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈªëË°£‰∫∫3-Êû™Áâà].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 129
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : #>“ U ≠$˘‘TDà\
+      result[9/10]
         kademlia hash : a5dfd9b565e4a8edeb05cf1c8280ef00
         tag list size : 6
-      result[9/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_DVDscr‰∏≠ÊñáÂ≠óÂπï_È´òÈÄüÂ§áÁî®Áâà.rmvb.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 690151790
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 3
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16974657
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : úäÃü9!iò˝Î)8¸[º°ó÷g
+      result[10/10]
         kademlia hash : 7a3988193019722e8a94a09d8cb1920f
         tag list size : 6
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.XviD.avi
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 964539365
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 57
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : P$‡»+E,f≈'7Öô¥€71ƒ
 
 ====packet No.108  at 8.967052(s)
    src_ip:95.31.9.131    dst_ip:172.31.202.77
    sender id : 2af662dd357175b1e748eeaa27bc513d
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 10
-      result[0/10]
+      result[1/10]
         kademlia hash : 41fd1f9da162ede3b856d9f9d5deaff1
         tag list size : 5
-      result[1/10]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : È£ûÈ∏üÂ®±‰πê[bbs.hdbird.com].ÈªëË°£‰∫∫3.720p.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1658547902
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[2/10]
         kademlia hash : 00729cabfd9cc46e59589bd1eda37b5e
         tag list size : 6
-      result[2/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_TC.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 523187501
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50464720
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : s™
+Cø)çÙò'Ü{°u)=“!
+      result[3/10]
         kademlia hash : f777d7f94339dec6ab107e69617d40ce
         tag list size : 4
-      result[3/10]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.srt
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 85788
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843085
+      result[4/10]
         kademlia hash : bc947db8deea39f018b6a75025eca6cd
         tag list size : 4
-      result[4/10]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.srt
+          tag[2/4]
+            tag type : 8
+            tag name length : 1
+            tag name : 2
+            tag value : 18714
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16975657
+      result[5/10]
         kademlia hash : 4b56e553c3c6000324cef624ffa65255
         tag list size : 6
-      result[5/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3[dvd-mkv][‰∏≠ÊñáÂ≠óÂπï][ÁæéÁâà].mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1038353240
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 223
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 17572398
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ÉÖò‰T¥πÙ ¬tKjŸãıÇ
+      result[6/10]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 9
-      result[6/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 32
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 17241134
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : £Z∑üêldY%®ΩW≈‘†è_∞∏
+      result[7/10]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 9
-      result[7/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈáéÂÖîÂΩ±Èô¢_ytyy.cc]ÈªëË°£‰∫∫3_DVD‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 8
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5870
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 653
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 33687004
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : …ÕÒX±úîÔﬂ”Ã™⁄Ù~i≤‰
+      result[8/10]
         kademlia hash : 2fd3a28cd2806fec0c9fbf5471409830
         tag list size : 9
-      result[8/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_Men.in.Black.3_2012_TS.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 41
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 733
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 84283796
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ô“@ªa@Pääyze\>è
+      result[9/10]
         kademlia hash : d1ee35dc73a12fb4901b669cb4f09470
         tag list size : 9
-      result[9/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 694093560
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 7
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 899
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 67373841
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 
+Ù∂Ã6£ﬂ¸Ú‡áN±°ép”9
+      result[10/10]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 6
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 34615424
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : kI<ÒÇ[¨'ûØı/÷ÎXÉ1Ûœ
 
 ====packet No.109  at 9.054847(s)
    src_ip:95.31.9.131    dst_ip:172.31.202.77
    sender id : 2af662dd357175b1e748eeaa27bc513d
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 4
-      result[0/4]
+      result[1/4]
         kademlia hash : b36e1cd6254c22ea365ba08117e7e7b1
         tag list size : 8
-      result[1/4]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_MIBÊòüÈôÖÊàòË≠¶3_ÈªëË∂ÖÁâπË≠¶ÁªÑ3_TSÊä¢ÂÖàÁâà‰∏≠ÊñáÂ≠óÂπï.rmvb.!mv
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 733
+          tag[6/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[7/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[8/8]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ˚H∂^ ZfOÅg‹BEÌ≤ØÚ°&
+      result[2/4]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 9
-      result[2/4]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 12
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 17572481
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ˛≥8óπ§6ê∏/&@≤èŸˇ!
+      result[3/4]
         kademlia hash : eb439e81457a3e85f57591a903e5ad8d
         tag list size : 5
-      result[3/4]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_HD.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 26
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[4/4]
         kademlia hash : ce8d57fc18951909ea12977ab38b25bb
         tag list size : 11
+          tag[1/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.Ê∏ÖÊô∞TSËã±ËØ≠‰∏≠Â≠ó.rmvb
+          tag[2/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 560499751
+          tag[3/11]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.3i8i.netÔ†£ÈÖêÂ†§Ôõá
+          tag[6/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : www.114dy.netÔ†£ÈÖêÂ†§Ôõá
+          tag[7/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5821
+          tag[8/11]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 623
+          tag[9/11]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[10/11]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50596542
+          tag[11/11]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ≤¿”‘'∂W≥b∫¨¿hmªü
 
 ====packet No.110  at 9.126527(s)
    src_ip:172.31.202.77    dst_ip:115.192.229.215
@@ -1847,13 +4891,13 @@
     message type : KADEMLIA_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
         tcp port : 4667
         kad version : 0
-      peer[1/2]
+      peer[2/2]
         peer id : 2f2d61dd8b55b5a754957b5cb9d017a0
         ip : 181.147.143.143
         udp port : 21665
@@ -1867,48 +4911,458 @@
    src_ip:115.192.229.215    dst_ip:172.31.202.77
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 14
-      result[0/14]
+      result[1/14]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 4
-      result[1/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠óa.rm
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[2/14]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 9
-      result[2/14]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.HD‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 32
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.memehu.com
+          tag[6/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : Áπ´Áπ´Ë™•ËêáËçåÂéô
+          tag[7/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5875
+          tag[8/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1910
+          tag[9/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+      result[3/14]
         kademlia hash : 7c7fea82902567bdc64fa9ecab5182a1
         tag list size : 6
-      result[3/14]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [138film.com]ÈªëË°£‰∫∫3_HD.rmvb.!mv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5876
+          tag[5/6]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1087
+          tag[6/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+      result[4/14]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 7
-      result[4/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈªëË°£‰∫∫3-Êû™Áâà].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+      result[5/14]
         kademlia hash : 7a3988193019722e8a94a09d8cb1920f
         tag list size : 7
-      result[5/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.XviD.avi
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 964539365
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 211
+            tag value : 19
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1372
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : wmv3
+      result[6/14]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 7
-      result[6/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 57
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+      result[7/14]
         kademlia hash : 4b56e553c3c6000324cef624ffa65255
         tag list size : 4
-      result[7/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3[dvd-mkv][‰∏≠ÊñáÂ≠óÂπï][ÁæéÁâà].mkv
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1038353240
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 104
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[8/14]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 5
-      result[8/14]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈáéÂÖîÂΩ±Èô¢_ytyy.cc]ÈªëË°£‰∫∫3_DVD‰∏≠Â≠ó.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 11
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 4
+            tag value : rmvb
+      result[9/14]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 4
-      result[9/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 104
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[10/14]
         kademlia hash : d1ee35dc73a12fb4901b669cb4f09470
         tag list size : 5
-      result[10/14]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠ó.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 694093560
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 4
+            tag value : rmvb
+      result[11/14]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 7
-      result[11/14]
+          tag[1/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/7]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/7]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/7]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/7]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+      result[12/14]
         kademlia hash : 8e5a073088f7de5ff203596a51b414af
         tag list size : 4
-      result[12/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.mp4
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 423058832
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[13/14]
         kademlia hash : eb439e81457a3e85f57591a903e5ad8d
         tag list size : 4
-      result[13/14]
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_HD.rmvb
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/4]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 26
+          tag[4/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+      result[14/14]
         kademlia hash : ce8d57fc18951909ea12977ab38b25bb
         tag list size : 9
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.Ê∏ÖÊô∞TSËã±ËØ≠‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 560499751
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 48
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.3i8i.netËç£Ë™âÂá∫ÂìÅ
+          tag[6/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : www.114dy.netËç£Ë™âÂá∫ÂìÅ
+          tag[7/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5821
+          tag[8/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 623
+          tag[9/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
 
 ====packet No.117  at 11.154192(s)
    src_ip:172.31.202.77    dst_ip:109.100.40.249
@@ -1929,13 +5383,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : a6772bddeccbfd8c7ffcb22161c9ac02
         ip : 46.82.119.119
         udp port : 56049
         tcp port : 6766
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : b6ab8add282cd673e686dc7dc28a48ed
         ip : 89.214.221.221
         udp port : 4672
@@ -1953,13 +5407,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 92fd63dd258fec9b6a2f23b0cce59014
         ip : 74.183.153.153
         udp port : 46449
         tcp port : 11045
         kad version : 7
-      peer[1/2]
+      peer[2/2]
         peer id : b8d263ddab44184ef37ba5853a942cee
         ip : 233.196.158.158
         udp port : 4672
@@ -1980,30 +5434,295 @@
    sender id : c13741dd02e400a70383ad196e3fc464
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 8
-      result[0/8]
+      result[1/8]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 8
-      result[1/8]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [√©¬ª¬ë√®¬°¬£√§¬∫¬∫3-√¶¬û¬™√ß¬â¬à].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 8
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+      result[2/8]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 8
-      result[2/8]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 43
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[3/8]
         kademlia hash : 33208637b34b21c8da6591eac85a1689
         tag list size : 5
-      result[3/8]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3 Men In Black 3 2012 Ts.dsm
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 557055775
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Audio
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843002
+      result[4/8]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 5
-      result[4/8]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [√©¬á¬é√•¬Ö¬î√•¬Ω¬±√©¬ô¬¢_ytyy.cc]√©¬ª¬ë√®¬°¬£√§¬∫¬∫3_DVD√§¬∏¬≠√•¬≠¬ó.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[5/8]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 5
-      result[5/8]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/5]
+            tag type : 8
+            tag name length : 1
+            tag name : 21
+            tag value : 377
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+      result[6/8]
         kademlia hash : 2fd3a28cd2806fec0c9fbf5471409830
         tag list size : 8
-      result[6/8]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3_Men.in.Black.3_2012_TS.rmvb
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 562868848
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 32
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5541
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 733
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 117638870
+      result[7/8]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 10
-      result[7/8]
+          tag[1/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [√®¬ø¬Ö√©¬õ¬∑√§¬∏¬ã√®¬Ω¬Ωwww.2tu.cc]√©¬ª¬ë√®¬°¬£√§¬∫¬∫3.HD√§¬∏¬≠√•¬≠¬ó.rmvb
+          tag[2/10]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/10]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 145
+          tag[4/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 208
+            tag value : www.memehu.com
+          tag[6/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 210
+            tag value : √ß¬π¬´√ß¬π¬´√®¬™¬•√®¬ê¬á√®¬ç¬å√•¬é¬ô
+          tag[7/10]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5875
+          tag[8/10]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1910
+          tag[9/10]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[10/10]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16975824
+      result[8/8]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 4
+          tag[1/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : √©¬ª¬ë√®¬°¬£√§¬∫¬∫3.TS√©¬´¬ò√¶¬∏¬Ö√ß¬â¬à√§¬∏¬≠√•¬≠¬óa.rm
+          tag[2/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/4]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[4/4]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
 
 ====packet No.125  at 13.182049(s)
    src_ip:172.31.202.77    dst_ip:79.158.196.233
@@ -2024,13 +5743,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : ed6d61dd33c40a310c1888bee789d7f6
         ip : 70.79.213.213
         udp port : 23311
         tcp port : 10726
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
@@ -2048,13 +5767,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : ed6d61dd33c40a310c1888bee789d7f6
         ip : 14.134.197.197
         udp port : 21630
         tcp port : 11983
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
@@ -2093,43 +5812,258 @@
    sender id : b8d263ddab44184ef37ba5853a942cee
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 4
-      result[0/4]
+      result[1/4]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 9
-      result[1/4]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : £Z∑üêldY%®ΩW≈‘†è_∞∏
+      result[2/4]
         kademlia hash : a51948e9eec442fe24269586a2748a4a
         tag list size : 5
-      result[2/4]
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.rar.torrent
+          tag[2/5]
+            tag type : 8
+            tag name length : 1
+            tag name : 2
+            tag value : 64844
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+          tag[5/5]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ‰ïﬁ◊Ìøµ_å¡∞õ ©¶˘ãiO
+      result[3/4]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 9
-      result[3/4]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ˛≥8óπ§6ê∏/&@≤èŸˇ!
+      result[4/4]
         kademlia hash : eb439e81457a3e85f57591a903e5ad8d
         tag list size : 5
+          tag[1/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_HD.rmvb
+          tag[2/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 869125934
+          tag[3/5]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 26
+          tag[4/5]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/5]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
 
 ====packet No.135  at 14.487221(s)
    src_ip:92.129.117.147    dst_ip:172.31.202.77
    sender id : c4386eddc068ae9314707617b98673bd
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 2
-      result[0/2]
+      result[1/2]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 9
-      result[1/2]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 13
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 34085258
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 	˛≥8óπ§6ê∏/&@≤èŸˇ!
+      result[2/2]
         kademlia hash : ce8d57fc18951909ea12977ab38b25bb
         tag list size : 6
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.Ê∏ÖÊô∞TSËã±ËØ≠‰∏≠Â≠ó.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 560499751
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 16
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16909788
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ≤¿”‘'∂W≥b∫¨¿hmªü
 
 ====packet No.136  at 14.541622(s)
    src_ip:87.221.214.89    dst_ip:172.31.202.77
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : cae661dd4c81029e1a3661f47a6c6454
         ip : 250.8.44.44
         udp port : 29936
         tcp port : 26766
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : bc9262ddfcd2c9f881157dc8f9761e8a
         ip : 215.229.192.192
         udp port : 4672
@@ -2147,13 +6081,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : ed6d61dd33c40a310c1888bee789d7f6
         ip : 70.79.213.213
         udp port : 23311
         tcp port : 10726
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : 402861dddf7e868b1cbfb9dc9c0f42d5
         ip : 121.173.239.239
         udp port : 10004
@@ -2171,36 +6105,401 @@
    sender id : a18762dd63c329e6c5a37b4bb5dd0fc2
     target id : f26261dda4ac6efc25b688c8fef2e820
     result list size : 10
-      result[0/10]
+      result[1/10]
         kademlia hash : f702c5d5e945bd5ff691de9a046bec76
         tag list size : 6
-      result[1/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3.TSÈ´òÊ∏ÖÁâà‰∏≠Â≠óa.rm
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 730398002
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 125
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : 0id9¿; ®é◊]Î‡7˚ãˇ¶
+      result[2/10]
         kademlia hash : 57f112cf6aae15540d771c1119507b8c
         tag list size : 6
-      result[2/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ËøÖÈõ∑‰∏ãËΩΩwww.2tu.cc]ÈªëË°£‰∫∫3.HD‰∏≠Â≠ó.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1482712731
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 24
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 50530756
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : Ü€∞o±¯è⁄b)Ø0‹Ji&Ã
+      result[3/10]
         kademlia hash : 9413380cf899d55221ea34a2a93c2ce2
         tag list size : 8
-      result[3/10]
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈªëË°£‰∫∫3-Êû™Áâà].Men.in.Black.3.2012.TS.XViD.AC3.HQ.Hive-CM8.avi
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1382307840
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 103
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5634
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1955
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[4/10]
         kademlia hash : 7a3988193019722e8a94a09d8cb1920f
         tag list size : 9
-      result[4/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men in Black 3 (2012) DVDRip.XviD.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 964539365
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 60
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 211
+            tag value : 19
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1372
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : wmv3
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : P$‡»+E,f≈'7Öô¥€71ƒ
+      result[5/10]
         kademlia hash : a5dfd9b565e4a8edeb05cf1c8280ef00
         tag list size : 9
-      result[5/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3_DVDscr‰∏≠ÊñáÂ≠óÂπï_È´òÈÄüÂ§áÁî®Áâà.rmvb.rmvb
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 690151790
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 2
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5498
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 899
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843002
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : úäÃü9!iò˝Î)8¸[º°ó÷g
+      result[6/10]
         kademlia hash : 5e98e025954a376535ccad4d025640aa
         tag list size : 9
-      result[6/10]
+          tag[1/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3].Men.In.Black.Dark.Watchers.2012.DVDRiP.XViD-UNKNOWN.avi
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1095581628
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 211
+          tag[4/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 4532
+          tag[6/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 1923
+          tag[7/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : xvid
+          tag[8/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843252
+          tag[9/9]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : £Z∑üêldY%®ΩW≈‘†è_∞∏
+      result[7/10]
         kademlia hash : 4b56e553c3c6000324cef624ffa65255
         tag list size : 6
-      result[7/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3[dvd-mkv][‰∏≠ÊñáÂ≠óÂπï][ÁæéÁâà].mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1038353240
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 33819326
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : ÉÖò‰T¥πÙ ¬tKjŸãıÇ
+      result[8/10]
         kademlia hash : b987ef52da54ca018aaf28d52a7b05ef
         tag list size : 6
-      result[8/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : [ÈáéÂÖîÂΩ±Èô¢_ytyy.cc]ÈªëË°£‰∫∫3_DVD‰∏≠Â≠ó.rmvb
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 536081132
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 11
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 4
+            tag value : rmvb
+          tag[6/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16843752
+      result[9/10]
         kademlia hash : 7ec39553828716a261de77389b6ec76e
         tag list size : 6
-      result[9/10]
+          tag[1/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : ÈªëË°£‰∫∫3 Men in Black III 2012.720p-MYSTiC.mkv
+          tag[2/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 2092260391
+          tag[3/6]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 1
+          tag[4/6]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/6]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16909538
+          tag[6/6]
+            tag type : 10
+            tag name length : 1
+            tag name : 55
+            tag value : kI<ÒÇ[¨'ûØı/÷ÎXÉ1Ûœ
+      result[10/10]
         kademlia hash : 0d27499d15f781bb1db05f20b24b0799
         tag list size : 8
+          tag[1/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 1
+            tag value : MIBÊòüÈöõÊà∞Ë≠¶3 (ÈªëË°£‰∫∫3) TSÊ∏ÖÊô∞‰∏≠Â≠ó.rmvb
+          tag[2/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 461081392
+          tag[3/8]
+            tag type : 9
+            tag name length : 1
+            tag name : 21
+            tag value : 14
+          tag[4/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 3
+            tag value : Video
+          tag[5/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 211
+            tag value : 5518
+          tag[6/8]
+            tag type : 8
+            tag name length : 1
+            tag name : 212
+            tag value : 584
+          tag[7/8]
+            tag type : 2
+            tag name length : 1
+            tag name : 213
+            tag value : rv40
+          tag[8/8]
+            tag type : 3
+            tag name length : 1
+            tag name : 51
+            tag value : 16910288
 
 ====packet No.143  at 16.224249(s)
    src_ip:172.31.202.77    dst_ip:81.37.27.173
@@ -2214,13 +6513,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 1e2d75dd158ead3afbad069918492b99
         ip : 200.18.21.21
         udp port : 43595
         tcp port : 41509
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : ce3f5fdd4e1b1b1f481389ab3794dc13
         ip : 97.44.222.222
         udp port : 7700
@@ -2245,13 +6544,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : e24d51ddf5d26da8c89859cf7eac20e6
         ip : 194.72.238.238
         udp port : 5155
         tcp port : 5145
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : 5cf3e6dde0c513c6856f438b7de9df24
         ip : 22.119.11.11
         udp port : 4672
@@ -2283,13 +6582,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 86d91edd96b9d4031e0673b90686b8f5
         ip : 91.5.25.25
         udp port : 25624
         tcp port : 5515
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : 7a95ebdfdb17611a7bcdca3d0aee3608
         ip : 238.2.75.75
         udp port : 3417
@@ -2328,13 +6627,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 9698dddde16a425fed464a9f0afe3921
         ip : 2.249.108.108
         udp port : 37944
         tcp port : 47728
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : a3b61bdc1ece81ccc02dfc8f69bd9384
         ip : 177.32.125.125
         udp port : 4672
@@ -2352,13 +6651,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 67e679df1a75579529c2dde95eba6fd7
         ip : 191.230.44.44
         udp port : 1052
         tcp port : 36504
         kad version : 4
-      peer[1/2]
+      peer[2/2]
         peer id : d94032de5d4298aec4baaccfcafae880
         ip : 136.25.33.33
         udp port : 52300
@@ -2376,13 +6675,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : e56764df4e7602984c43a3794bb87c7c
         ip : 9.113.229.229
         udp port : 26562
         tcp port : 26552
         kad version : 8
-      peer[1/2]
+      peer[2/2]
         peer id : 0e96f7df6a8beaec66ee4f86c8144dd3
         ip : 65.136.37.37
         udp port : 4590
@@ -2417,13 +6716,13 @@
     message type : KADEMLIA2_RES
     target id : f26261dda4ac6efc25b688c8fef2e820
     peer list size : 2
-      peer[0/2]
+      peer[1/2]
         peer id : 9c1072dce5da7de2cc2588bdb7f7311b
         ip : 4.76.161.161
         udp port : 37897
         tcp port : 61958
         kad version : 9
-      peer[1/2]
+      peer[2/2]
         peer id : b1b7afdc5c30ce55317ca690c308e71d
         ip : 177.105.248.248
         udp port : 51911
@@ -2509,25 +6808,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a70e819d6aa06750d9ff94d900ebf92d
         ip : 101.118.243.243
         udp port : 16930
         tcp port : 10241
         kad version : 4
-      peer[1/4]
+      peer[2/4]
         peer id : cad426960577d3a49521d4b482d1c98c
         ip : 194.82.89.89
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[2/4]
+      peer[3/4]
         peer id : 75b0879636786a33267c56faa815a294
         ip : 67.57.170.170
         udp port : 30530
         tcp port : 30520
         kad version : 9
-      peer[3/4]
+      peer[4/4]
         peer id : 6e998696ec0207ca21e02555b2c76aeb
         ip : 254.248.149.149
         udp port : 4668
@@ -2549,67 +6848,67 @@
     message type : KADEMLIA2_RES
     target id : 0876111f1d9556bca506ca696e1fab83
     peer list size : 11
-      peer[0/11]
+      peer[1/11]
         peer id : 830f191f23a3a11675d9db6a407d0fb1
         ip : 126.146.65.65
         udp port : 45152
         tcp port : 8449
         kad version : 9
-      peer[1/11]
+      peer[2/11]
         peer id : a155301f9963f4c6a07f540d0f54e599
         ip : 237.37.44.44
         udp port : 4672
         tcp port : 4662
         kad version : 9
-      peer[2/11]
+      peer[3/11]
         peer id : eab15e1fa79aea7e1fed5899b5b53279
         ip : 166.2.70.70
         udp port : 26729
         tcp port : 26729
         kad version : 8
-      peer[3/11]
+      peer[4/11]
         peer id : ba7d4b1f3511febbc78916dd82a4857b
         ip : 10.149.2.2
         udp port : 22824
         tcp port : 11846
         kad version : 4
-      peer[4/11]
+      peer[5/11]
         peer id : 45624b1f7910d803277749fee8077c5d
         ip : 169.105.58.58
         udp port : 18433
         tcp port : 54677
         kad version : 7
-      peer[5/11]
+      peer[6/11]
         peer id : 5023711f0ef81313a6feef956bd245a8
         ip : 89.131.60.60
         udp port : 19698
         tcp port : 26701
         kad version : 9
-      peer[6/11]
+      peer[7/11]
         peer id : 5f96731f4c61f4da83f033a2162a9cd3
         ip : 240.13.206.206
         udp port : 4672
         tcp port : 4662
         kad version : 9
-      peer[7/11]
+      peer[8/11]
         peer id : 9309781f858c5e7e719e1c0dae33493f
         ip : 189.244.52.52
         udp port : 1997
         tcp port : 1977
         kad version : 9
-      peer[8/11]
+      peer[9/11]
         peer id : 13636d1f23b15bb80cef1ee01a61bb72
         ip : 88.246.32.32
         udp port : 23048
         tcp port : 9708
         kad version : 4
-      peer[9/11]
+      peer[10/11]
         peer id : 1a8c6d1f44745644916f3807a8fef4d3
         ip : 54.19.58.58
         udp port : 5629
         tcp port : 5619
         kad version : 8
-      peer[10/11]
+      peer[11/11]
         peer id : 990d901f7ad55a1aa9b4ebc04d16bf57
         ip : 57.169.172.172
         udp port : 7591
@@ -2628,67 +6927,67 @@
     message type : KADEMLIA2_RES
     target id : 0876111f1d9556bca506ca696e1fab83
     peer list size : 11
-      peer[0/11]
+      peer[1/11]
         peer id : 4437111fd4377a52d8c3782edc484367
         ip : 181.148.176.176
         udp port : 24972
         tcp port : 10465
         kad version : 4
-      peer[1/11]
+      peer[2/11]
         peer id : c538111ff241ffc61ab6f1589c78dd9e
         ip : 149.64.216.216
         udp port : 3758
         tcp port : 3757
         kad version : 9
-      peer[2/11]
+      peer[3/11]
         peer id : df28111fb09456716119a1cd2b6336b9
         ip : 182.87.5.5
         udp port : 64990
         tcp port : 13472
         kad version : 9
-      peer[3/11]
+      peer[4/11]
         peer id : ea05111f04b83f9802b458d42891bcbe
         ip : 38.182.175.175
         udp port : 4648
         tcp port : 56087
         kad version : 9
-      peer[4/11]
+      peer[5/11]
         peer id : feea111f979341d7f312cd8f4a2f0d30
         ip : 126.149.186.186
         udp port : 1130
         tcp port : 11782
         kad version : 4
-      peer[5/11]
+      peer[6/11]
         peer id : d19a111f1d5803e1552cafb3628f1e2d
         ip : 76.237.64.64
         udp port : 20025
         tcp port : 12348
         kad version : 4
-      peer[6/11]
+      peer[7/11]
         peer id : c886111fba5ff28fc8fdbcacbaa45ce6
         ip : 117.128.114.114
         udp port : 1701
         tcp port : 1723
         kad version : 9
-      peer[7/11]
+      peer[8/11]
         peer id : 7985111ff3418ded3440af3c42385055
         ip : 244.84.181.181
         udp port : 61270
         tcp port : 16378
         kad version : 9
-      peer[8/11]
+      peer[9/11]
         peer id : d580111f4212220bbe7e2ac764b366af
         ip : 80.75.34.34
         udp port : 16905
         tcp port : 38060
         kad version : 7
-      peer[9/11]
+      peer[10/11]
         peer id : ed61101fad9a15004efe1dbe6f1cd3ba
         ip : 230.176.224.224
         udp port : 13629
         tcp port : 14206
         kad version : 4
-      peer[10/11]
+      peer[11/11]
         peer id : f646101f3fd2479cbb8a8a4e22a72b19
         ip : 143.235.17.17
         udp port : 24362
@@ -2721,25 +7020,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : 09421f9dddc2de06c50e7184e3ffd333
         ip : 31.170.45.45
         udp port : 4679
         tcp port : 4669
         kad version : 8
-      peer[1/4]
+      peer[2/4]
         peer id : a33d1f9d8b6e93077fdb584d7f24d4a8
         ip : 155.189.38.38
         udp port : 50705
         tcp port : 2321
         kad version : 7
-      peer[2/4]
+      peer[3/4]
         peer id : 25251f9d18eda2e2d5b34964b9dfe139
         ip : 29.166.3.3
         udp port : 34387
         tcp port : 10726
         kad version : 4
-      peer[3/4]
+      peer[4/4]
         peer id : 8cfb1e9dd6d149f9b0d880a39ad18291
         ip : 32.59.144.144
         udp port : 1811
@@ -2768,25 +7067,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : 87455d9d7fe1527e4e44396ed4128c60
         ip : 70.83.80.80
         udp port : 21390
         tcp port : 14390
         kad version : 4
-      peer[1/4]
+      peer[2/4]
         peer id : 0b26ab9d53eebf7c8c49fd6b732d82cd
         ip : 33.26.255.255
         udp port : 63212
         tcp port : 41396
         kad version : 9
-      peer[2/4]
+      peer[3/4]
         peer id : 21b5fb9d7999923ec5e2b35ed01e3ec2
         ip : 104.233.134.134
         udp port : 45822
         tcp port : 4662
         kad version : 8
-      peer[3/4]
+      peer[4/4]
         peer id : 9c4d7f9c0b086b2632b71d4168627947
         ip : 199.145.24.24
         udp port : 4672
@@ -2820,25 +7119,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : 7ae6159d5d5feb96a32e2742fc9ef696
         ip : 80.45.250.250
         udp port : 23561
         tcp port : 9833
         kad version : 4
-      peer[1/4]
+      peer[2/4]
         peer id : 98f6059db6f7b3858698e206269485bd
         ip : 205.46.252.252
         udp port : 56662
         tcp port : 13309
         kad version : 4
-      peer[2/4]
+      peer[3/4]
         peer id : a75d039d0432c7f6afb72e7984ecc098
         ip : 95.54.84.84
         udp port : 6889
         tcp port : 6879
         kad version : 9
-      peer[3/4]
+      peer[4/4]
         peer id : 2a7f359d7f24d3ede7ad676952cdbe20
         ip : 159.81.130.130
         udp port : 4672
@@ -2866,25 +7165,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a33d1f9d8b6e93077fdb584d7f24d4a8
         ip : 155.189.38.38
         udp port : 50705
         tcp port : 2321
         kad version : 7
-      peer[1/4]
+      peer[2/4]
         peer id : 64121f9d926ec5de1e468ea9a3c84c27
         ip : 237.83.47.47
         udp port : 60002
         tcp port : 54940
         kad version : 9
-      peer[2/4]
+      peer[3/4]
         peer id : 6a241d9df47cf7b47198c1a3237ea9f6
         ip : 146.164.142.142
         udp port : 37192
         tcp port : 10319
         kad version : 4
-      peer[3/4]
+      peer[4/4]
         peer id : e5e11c9d528f508b9f45c3ebcb0431a3
         ip : 98.227.145.145
         udp port : 7124
@@ -2920,25 +7219,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a4f81f9dc7335ad56714c81107bcea62
         ip : 126.41.12.12
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[1/4]
+      peer[2/4]
         peer id : ace31f9d2e7703db4e472b07846ff21f
         ip : 157.252.109.109
         udp port : 4670
         tcp port : 4660
         kad version : 8
-      peer[2/4]
+      peer[3/4]
         peer id : e9d31f9dd7ea6580b83a732c4a9448e2
         ip : 108.84.168.168
         udp port : 59645
         tcp port : 4662
         kad version : 9
-      peer[3/4]
+      peer[4/4]
         peer id : 387a1f9d0cb7573f4d6e6b5da30195aa
         ip : 69.33.94.94
         udp port : 16018
@@ -2953,34 +7252,79 @@
    sender id : 826b1a9d6f04a27beda8b11ac31d2f11
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     result list size : 1
-      result[0/1]
+      result[1/1]
         kademlia hash : 7b40e04e734c0ec0eedb11216d6f907e
         tag list size : 9
+          tag[1/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 2
+            tag value : 1658547902
+          tag[2/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 254
+            tag value : 1915423605
+          tag[3/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 255
+            tag value : 3
+          tag[4/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 251
+            tag value : 1810493279
+          tag[5/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 250
+            tag value : 16711
+          tag[6/9]
+            tag type : 2
+            tag name length : 1
+            tag name : 248
+            tag value : F818F57ADEEC566A1F7C40F4BDB9EA68
+          tag[7/9]
+            tag type : 3
+            tag name length : 1
+            tag name : 253
+            tag value : 4294967295
+          tag[8/9]
+            tag type : 9
+            tag name length : 1
+            tag name : 243
+            tag value : 3
+          tag[9/9]
+            tag type : 8
+            tag name length : 1
+            tag name : 252
+            tag value : 1025
 
 ====packet No.228  at 95.335820(s)
    src_ip:114.43.111.34    dst_ip:172.31.202.77
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a4f81f9dc7335ad56714c81107bcea62
         ip : 126.41.12.12
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[1/4]
+      peer[2/4]
         peer id : 387a1f9d0cb7573f4d6e6b5da30195aa
         ip : 23.248.96.96
         udp port : 21679
         tcp port : 10275
         kad version : 4
-      peer[2/4]
+      peer[3/4]
         peer id : 58741f9d331768b7885aab18059d7801
         ip : 39.13.179.179
         udp port : 16508
         tcp port : 8996
         kad version : 4
-      peer[3/4]
+      peer[4/4]
         peer id : 09421f9dddc2de06c50e7184e3ffd333
         ip : 31.170.45.45
         udp port : 4679
@@ -3002,25 +7346,25 @@
     message type : KADEMLIA2_RES
     target id : 41fd1f9da162ede3b856d9f9d5deaff1
     peer list size : 4
-      peer[0/4]
+      peer[1/4]
         peer id : a0409b99db7293defcf3201e2ca7aec6
         ip : 36.94.180.180
         udp port : 60489
         tcp port : 60479
         kad version : 9
-      peer[1/4]
+      peer[2/4]
         peer id : 73bbbc9982af77249876ff6972c15244
         ip : 241.197.217.217
         udp port : 21775
         tcp port : 21775
         kad version : 8
-      peer[2/4]
+      peer[3/4]
         peer id : 24ae849866641067bd2d34f5976d8eed
         ip : 24.153.39.39
         udp port : 4672
         tcp port : 4662
         kad version : 8
-      peer[3/4]
+      peer[4/4]
         peer id : accd8f9a36d04d78eb9f2765f7f2bd1b
         ip : 139.240.224.224
         udp port : 19229

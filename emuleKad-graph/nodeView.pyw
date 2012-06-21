@@ -333,14 +333,20 @@ class Node(QtGui.QGraphicsItem):
         if 'results' in self.data:
             content += '\nvalues:\n'
             line_count += 1 
-            value_count = 0
-            for value in self.data['results']:
-                value_count += 1
-                content += '    '+str(value_count) #+' : '+value['ip']+'   '+str(value['port'])+'\n'
-                line_count += 1 
-                if not all and line_count >= 16:
-                    content += '    ......(click to see all)'
-                    return content
+            result_count = 0
+            for result in self.data['results']:
+                result_count += 1
+                content += "  [result %d/%d]\n" % (result_count, len(self.data['results']))
+                content += "    kademlia hash:%s\n      tag list:\n" % (result['kademlia_hash'])
+                line_count += 3
+                tag_count = 0
+                for tag in result['tags']:
+                    tag_count += 1
+                    content += "        tag[%d/%d]  %d  [%d] = %s\n" % (tag_count, len(result['tags']), tag['type'], tag['name'], tag['value'])
+                    line_count += 1
+                    if not all and line_count >= 16:
+                        content += '    ......(click to see all)'
+                        return content
             
         return content
         

@@ -152,12 +152,12 @@ class EDonkey:
         if type == 'tag':
             tag = {}
             tag['type'], offset = self.get_type('int8', eDonkey, offset)
-            tag['tag_name_length'], offset = self.get_type('int16', eDonkey, offset)
+            tag['name_length'], offset = self.get_type('int16', eDonkey, offset)
             # if tag['tag_name_length'] != 1:
-                # print "attention! an tag_name_length=%d (not 1) appears!" %  tag['tag_name_length']
+                # print "attention! an tag_name_length=%d (not 1) appears!" %  tag['name_length']
                 # print "at pac_num=%d, eDonkey=%s" %  (self.pac['info'].pac_num, eDonkey[offset-3:offset+7].encode('hex'))
             # 如果tag_name_length不是1,这里就是错误的!
-            tag['tag_name'], offset = self.get_type('int8', eDonkey, offset)
+            tag['name'], offset = self.get_type('int8', eDonkey, offset)
             if tag['type'] == KADEMLIA_TAGTYPE_HASH:
                 tag['value'], offset = self.get_type('ID', eDonkey, offset)
             if tag['type'] == KADEMLIA_TAGTYPE_STRING:
@@ -181,7 +181,7 @@ class EDonkey:
         logIO.write("====packet No.%d  at %f(s)\n" % (self.pac['info'].pac_num, self.pac['info'].time))
         logIO.write("   src_ip:%s    dst_ip:%s\n" % (self.pac['info'].src_ip, self.pac['info'].dst_ip))
     
-        # ===================
+        # =================== 路由查找请求
         if self.pac['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ]:
             logIO.write(
 '''    message type : %s
@@ -190,7 +190,7 @@ class EDonkey:
     recipient id : %s
 ''' % (kademlia_msgs[self.pac['message_type']], self.pac['request_type'], self.pac['target_id'], self.pac['recipient_id']))
 
-        # ===================
+        # =================== 路由查找应答
         elif self.pac['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
             logIO.write(
 '''    message type : %s
@@ -206,9 +206,9 @@ class EDonkey:
         udp port : %d
         tcp port : %d
         kad version : %d
-''' % (i, len(self.pac['peers']), peer['peer_id'], peer['ip'], peer['udp_port'], peer['tcp_port'], peer['kad_version']))
+''' % (i+1, len(self.pac['peers']), peer['peer_id'], peer['ip'], peer['udp_port'], peer['tcp_port'], peer['kad_version']))
 
-        # ===================
+        # =================== 资源查找请求
         elif self.pac['message_type'] in [KADEMLIA2_SEARCH_KEY_REQ]:
             logIO.write(
 '''    message type : %s
@@ -216,7 +216,7 @@ class EDonkey:
     start position : %d
 ''' % (kademlia_msgs[self.pac['message_type']], self.pac['target_id'], self.pac['start_position']))
 
-        # ===================
+        # =================== 资源查找应答
         elif self.pac['message_type'] in [KADEMLIA_SEARCH_RES, KADEMLIA2_SEARCH_RES]:
             if self.pac['message_type'] in [KADEMLIA2_SEARCH_RES]:
                 logIO.write("   sender id : %s\n" % self.pac['sender_id'])
@@ -230,6 +230,15 @@ class EDonkey:
 '''      result[%d/%d]
         kademlia hash : %s
         tag list size : %d
-''' % (i, len(self.pac['results']), result['kademlia_hash'], len(result['tags'])))
+''' % (i+1, len(self.pac['results']), result['kademlia_hash'], len(result['tags'])))
+                for j in range(len(result['tags'])):
+                    tag = result['tags'][j]
+                    logIO.write(
+'''          tag[%d/%d]
+            tag type : %d
+            tag name length : %d
+            tag name : %d
+            tag value : %s
+''' % (j+1, len(result['tags']), tag['type'], tag['name_length'], tag['name'], tag['value']))
 
         logIO.write('\n')
