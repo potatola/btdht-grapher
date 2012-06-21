@@ -96,10 +96,16 @@ class Analyser:
     def edonkey_response(self, response):
         if response['target_id'] != self.user_target:
             return
-        if response['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
+        # if response['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES, KADEMLIA_SEARCH_RES]:
+            # src_id = self.ip2id[response['info'].src_ip]
+        # else:
+            # src_id = response['sender_id']
+        if 'sender_id' in response:
+            src_id = response['sender_id']
+        elif response['info'].src_ip in self.ip2id:
             src_id = self.ip2id[response['info'].src_ip]
         else:
-            src_id = response['sender_id']
+            print 'error: ip not seen before, no id can be matched!'
             
         # determine the 'src' node
         if response['info'].src_ip in self.nodes_by_ip: # a node that have been returned earlier
@@ -322,7 +328,7 @@ class Analyser:
             self.show_percentage += 10
             # a vertical line indicating that it'll show one more part.
             tempText = self.canvas.scene().addText(_fromUtf8(str(self.show_percentage)+'%'))
-            tempText.setPos(tx, 20)
+            tempText.setPos(tx, 15 + self.show_percentage)
             self.canvas.scene().addLine(tx, 10, tx, __builtin__.__dict__['Scene_height'])
         ty = ((ty - self.Scene_uptop) / (__builtin__.__dict__['Scene_height'] - self.Scene_uptop)) * __builtin__.__dict__['Scene_height']
         ty = __builtin__.__dict__['Scene_height'] - ty
