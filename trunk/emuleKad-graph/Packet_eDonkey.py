@@ -4,6 +4,7 @@
 '''
 from project_definations import *
 from packet2image import *
+import zlib
 
 logIO = open('Packet_eDonkey.log', 'w')
 
@@ -27,9 +28,15 @@ class EDonkey:
         protocol = self.get_type('int8', eDonkey, 0)[0]
         msgType = self.get_type('int8', eDonkey, 1)[0]
         
-        if protocol in [EDONKEY_PROTO_KADEMLIA, EDONKEY_PROTO_KADEMLIA_COMP]:
+        if protocol in [EDONKEY_PROTO_KADEMLIA]:
             self.pac['protocol'] = protocol
             self.pac['message_type'] = msgType
+            offset = self.dissect_kademlia_udp_message(eDonkey, msgType, EDONKEY_UDP_HEADER_LENGTH)
+        # 对于压缩的类型需要先解压缩
+        elif protocol in [EDONKEY_PROTO_KADEMLIA_COMP]:
+            self.pac['protocol'] = protocol
+            self.pac['message_type'] = msgType
+            eDonkey = eDonkey[:2] + zlib.decompress(eDonkey[2:])
             offset = self.dissect_kademlia_udp_message(eDonkey, msgType, EDONKEY_UDP_HEADER_LENGTH)
             
         if type == 1 and self.pac['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ, KADEMLIA2_SEARCH_KEY_REQ]:
