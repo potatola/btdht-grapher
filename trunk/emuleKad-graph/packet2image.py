@@ -1,11 +1,13 @@
-#coding=utf-8
+ï»¿#coding=utf-8
 '''
-»­Í¼
+ç”»å›¾
 '''
 from nodeView import *
 from project_definations import *
 import math
-import sys
+import sys 
+reload(sys) 
+sys.setdefaultencoding('utf8')
 import __builtin__
 
 try:
@@ -18,7 +20,7 @@ class Analyser:
     '''collect all packets, draw the communication'''
     def __init__(self, canvas=None, main_window=None, type=1):
     
-        self.requests = {}    #´æ´¢ËùÓĞÇëÇóµÄ¶ÓÁĞ
+        self.requests = {}    #å­˜å‚¨æ‰€æœ‰è¯·æ±‚çš„é˜Ÿåˆ—
         self.IPs_queried = [] # related dst IPs of one search
         self.nodes_by_ip = {} # instances of Node, maping ip to Node
         
@@ -32,7 +34,7 @@ class Analyser:
         self.targets = []
         self.ip2id = {}
         
-        #»­²¼
+        #ç”»å¸ƒ
         if canvas != None:
             self.canvas = canvas
             self.main_window = main_window
@@ -43,6 +45,23 @@ class Analyser:
             
             self.canvas.scene().addLine(5, __builtin__.__dict__['Scene_height']-5, __builtin__.__dict__['Scene_width'], __builtin__.__dict__['Scene_height']-5)
             self.canvas.scene().addLine(5, __builtin__.__dict__['Scene_height']-5, 5, 5)
+            
+            example_node = Node(self.canvas, Node_color['requested'], self.main_window)
+            example_node.setSelfDate(_fromUtf8('èŠ‚ç‚¹ç±»å‹'), _fromUtf8('å‘é€è¿‡è¯·æ±‚çš„èŠ‚ç‚¹'))
+            self.canvas.scene().addItem(example_node)
+            example_node.setPos(__builtin__.__dict__['Scene_width'], 30)
+            example_node = Node(self.canvas, Node_color['returned'], self.main_window)
+            example_node.setSelfDate(_fromUtf8('èŠ‚ç‚¹ç±»å‹'), _fromUtf8('å‡ºç°åœ¨åº”ç­”ä¿¡æ¯ä¸­çš„èŠ‚ç‚¹'))
+            self.canvas.scene().addItem(example_node)
+            example_node.setPos(__builtin__.__dict__['Scene_width'], 40)
+            example_node = Node(self.canvas, Node_color['responsed'], self.main_window)
+            example_node.setSelfDate(_fromUtf8('èŠ‚ç‚¹ç±»å‹'), _fromUtf8('åªè¿”å›äº†peersä¿¡æ¯çš„èŠ‚ç‚¹'))
+            self.canvas.scene().addItem(example_node)
+            example_node.setPos(__builtin__.__dict__['Scene_width'], 50)
+            example_node = Node(self.canvas, Node_color['peers'], self.main_window)
+            example_node.setSelfDate(_fromUtf8('èŠ‚ç‚¹ç±»å‹'), _fromUtf8('è¿”å›èµ„æºä¿¡æ¯çš„èŠ‚ç‚¹'))
+            self.canvas.scene().addItem(example_node)
+            example_node.setPos(__builtin__.__dict__['Scene_width'], 60)
             
             if type == 0:
                 #print 'the target Value is \'%s\'\n' % main_window.List.selectedItems()[0].text()
@@ -71,7 +90,7 @@ class Analyser:
             return
         elif self.start_time == -1:
             self.start_time = request['info'].time
-        # ¼ÇÂ¼±»²éÑ¯½ÚµãµÄip¶ÔÓ¦µÄidºÅ
+        # è®°å½•è¢«æŸ¥è¯¢èŠ‚ç‚¹çš„ipå¯¹åº”çš„idå·
         if request['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ]:
             self.ip2id[request['info'].dst_ip] = request['recipient_id']
             dst_id = self.ip2id[request['info'].dst_ip]
@@ -127,9 +146,10 @@ class Analyser:
             tmp_node.setPos(tx, ty)
             src_node = tmp_node
             
-        # Èç¹û·µ»ØµÄÊÇ¸ü½üµÄnodes, »­³öÕâĞ©nodes
+        # å¦‚æœè¿”å›çš„æ˜¯æ›´è¿‘çš„nodes, ç”»å‡ºè¿™äº›nodes
         if response['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
             src_node.setSelfDate('peers', response['peers'])
+            src_node.setInitColor(Node_color['peers'])
             for peer in response['peers']:
                 if not peer['ip'] in self.nodes_by_ip:
                     tmp_node = Node(self.canvas, Node_color['returned'], self.main_window)
@@ -193,7 +213,7 @@ class Analyser:
         self.requests[target].append(request)
         self.request_num += 1
         
-        #±£´æÊ±¼ä³¬¹ıIGNORE_TIMEÈÔÎ´±»´ğ¸´µÄÈÏÎª³¬Ê±£¬²»ÔÙ´¦Àí
+        #ä¿å­˜æ—¶é—´è¶…è¿‡IGNORE_TIMEä»æœªè¢«ç­”å¤çš„è®¤ä¸ºè¶…æ—¶ï¼Œä¸å†å¤„ç†
         for item in self.requests[target]:
             if request['info'].time - item['info'].time >= __builtin__.__dict__['IGNORE_TIME']:
                 self.requests[target].remove(item)
@@ -313,7 +333,7 @@ class Analyser:
             newItem = QTableWidgetItem(_fromUtf8(str(distance)))
             self.main_window.List.setItem(self.main_window.ListCount-1, 2, newItem)
         
-        #±£´æÊ±¼ä³¬¹ıIGNORE_TIMEÈÔÎ´±»´ğ¸´µÄÈÏÎª³¬Ê±£¬²»ÔÙ´¦Àí
+        #ä¿å­˜æ—¶é—´è¶…è¿‡IGNORE_TIMEä»æœªè¢«ç­”å¤çš„è®¤ä¸ºè¶…æ—¶ï¼Œä¸å†å¤„ç†
         for item in self.requests[target]:
             if request['info'].time - item['info'].time >= __builtin__.__dict__['IGNORE_TIME']:
                 self.requests[target].remove(item)
@@ -335,5 +355,5 @@ class Analyser:
         return ty
 
 if __name__ == '__main__':
-    #²âÊÔ´úÂë
+    #æµ‹è¯•ä»£ç 
     print 'test message.py'
