@@ -1,6 +1,6 @@
-#coding=utf-8
+ï»¿#coding=utf-8
 '''
-¶¨ÒåÏîÄ¿ÖĞÍ¨ÓÃµÄÊı¾İ½á¹¹ºÍ±äÁ¿
+å®šä¹‰é¡¹ç›®ä¸­é€šç”¨çš„æ•°æ®ç»“æ„å’Œå˜é‡
 '''
 
 EDONKEY_UDP_HEADER_LENGTH = 2
@@ -40,7 +40,7 @@ KADEMLIA_SEARCH_RES :   'KADEMLIA_SEARCH_RES',
 KADEMLIA2_SEARCH_RES    :   'KADEMLIA2_SEARCH_RES'
 }
 
-# °ü»ù±¾ĞÅÏ¢
+# åŒ…åŸºæœ¬ä¿¡æ¯
 class packet_info(object):
     ''''''
     time=0;    #float number 
@@ -48,5 +48,5 @@ class packet_info(object):
     pac_num=0;
     src_ip=''; src_port=0; dst_ip=''; dst_port=0;    
     
-# ²»Í¬ÀàĞÍ½Úµã¶ÔÓ¦µÄÑÕÉ«    
+# ä¸åŒç±»å‹èŠ‚ç‚¹å¯¹åº”çš„é¢œè‰²    
 Node_color = {'returned':'', 'responsed':'yellow', 'host':'green', 'timeout':'red', 'peers':'blue', 'requested':'cyan'}

@@ -1,10 +1,12 @@
-#coding=utf-8
-'''
-Ö÷Òª¶¨ÒåÒ»¸ö½ÓÊÕeDonkey¸ñÊ½±àÂëµÄ×Ö·û´®£¬½âÎöÆäÖĞº¬Òå¡£
+ï»¿'''
+ä¸»è¦å®šä¹‰ä¸€ä¸ªæ¥æ”¶eDonkeyæ ¼å¼ç¼–ç çš„å­—ç¬¦ä¸²ï¼Œè§£æå…¶ä¸­å«ä¹‰ã€‚
 '''
 from project_definations import *
 from packet2image import *
 import zlib
+import sys 
+reload(sys) 
+sys.setdefaultencoding('utf8')
 
 logIO = open('Packet_eDonkey.log', 'w')
 
@@ -20,7 +22,7 @@ class EDonkey:
             return True
         return False
         
-    # ½âÎöedonkeyĞ­ÒéÈë¿Ú
+    # è§£æedonkeyåè®®å…¥å£
     def dissect_edonkey_udp(self, eDonkey, pac_info, type):
         self.pac = {}
         self.pac['info'] = pac_info
@@ -32,7 +34,7 @@ class EDonkey:
             self.pac['protocol'] = protocol
             self.pac['message_type'] = msgType
             offset = self.dissect_kademlia_udp_message(eDonkey, msgType, EDONKEY_UDP_HEADER_LENGTH)
-        # ¶ÔÓÚÑ¹ËõµÄÀàĞÍĞèÒªÏÈ½âÑ¹Ëõ
+        # å¯¹äºå‹ç¼©çš„ç±»å‹éœ€è¦å…ˆè§£å‹ç¼©
         elif protocol in [EDONKEY_PROTO_KADEMLIA_COMP]:
             self.pac['protocol'] = protocol
             self.pac['message_type'] = msgType
@@ -50,36 +52,36 @@ class EDonkey:
         return
         
     def dissect_kademlia_udp_message(self, eDonkey, msg_type, offset):
-        # ¸ü½ü½ÚµãÇëÇó
+        # æ›´è¿‘èŠ‚ç‚¹è¯·æ±‚
         if msg_type in [KADEMLIA_REQ, KADEMLIA2_REQ]:
             type, offset = self.get_type('int8', eDonkey, offset)
             self.pac['request_type'] = type
             self.pac['target_id'], offset = self.get_type('ID', eDonkey, offset)
             self.pac['recipient_id'], offset = self.get_type('ID', eDonkey, offset)
         
-        # ½ÚµãĞÅÏ¢·µ»Ø
+        # èŠ‚ç‚¹ä¿¡æ¯è¿”å›
         if msg_type in [KADEMLIA_RES]:
             self.pac['target_id'], offset = self.get_type('ID', eDonkey, offset)
             self.pac['peers'], offset = self.dissect_edonkey_list(eDonkey, offset, 1, 'peer')
             
-        # ½ÚµãĞÅÏ¢·µ»Ø
+        # èŠ‚ç‚¹ä¿¡æ¯è¿”å›
         if msg_type in [KADEMLIA2_RES]:
             self.pac['target_id'], offset = self.get_type('ID', eDonkey, offset)
             self.pac['peers'], offset = self.dissect_edonkey_list(eDonkey, offset, 1, 'peer')
             
-        # ÇëÇó×ÊÔ´ĞÅÏ¢
+        # è¯·æ±‚èµ„æºä¿¡æ¯
         if msg_type in [KADEMLIA2_SEARCH_KEY_REQ]:
             self.pac['target_id'], offset = self.get_type('ID', eDonkey, offset)
             self.pac['start_position'], offset = self.get_type('int16', eDonkey, offset)
             
-        # ×ÊÔ´ĞÅÏ¢·µ»Ø
+        # èµ„æºä¿¡æ¯è¿”å›
         if msg_type in [KADEMLIA_SEARCH_RES]:
             # target
             self.pac['target_id'], offset = self.get_type('ID', eDonkey, offset)
             # result list
             self.pac['results'], offset = self.dissect_edonkey_list(eDonkey, offset, 2, 'result')
         
-        # ×ÊÔ´ĞÅÏ¢·µ»Ø
+        # èµ„æºä¿¡æ¯è¿”å›
         if msg_type in [KADEMLIA2_SEARCH_RES]:
             # sender
             self.pac['sender_id'], offset = self.get_type('ID', eDonkey, offset)
@@ -89,7 +91,7 @@ class EDonkey:
             self.pac['results'], offset = self.dissect_edonkey_list(eDonkey, offset, 2, 'result')
             
             
-    def dissect_edonkey_list(self, eDonkey, offset, listnum_length, dissect_type): #listnum_length´æ´¢Õ¼×Ö½ÚÊı,µ«ÊÇ²»ÖªµÀ³ıÁËÒ»×Ö½Ú»¹ÓĞÊ²Ã´
+    def dissect_edonkey_list(self, eDonkey, offset, listnum_length, dissect_type): #listnum_lengthå­˜å‚¨å å­—èŠ‚æ•°,ä½†æ˜¯ä¸çŸ¥é“é™¤äº†ä¸€å­—èŠ‚è¿˜æœ‰ä»€ä¹ˆ
         if listnum_length == 1:
             listnum, offset = self.get_type('int8', eDonkey, offset)
         elif listnum_length == 2:
@@ -104,7 +106,7 @@ class EDonkey:
         return res_list, offset
         
         
-    # ´ÓeDonkeyÁ÷ÖĞÌáÈ¡¸ø¶¨ÀàĞÍÊı¾İ
+    # ä»eDonkeyæµä¸­æå–ç»™å®šç±»å‹æ•°æ®
     def get_type(self, type, eDonkey, offset):
         if type == 'int8':
             return int(eDonkey[offset].encode('hex'), 16), offset+1
@@ -156,7 +158,7 @@ class EDonkey:
             # if tag['tag_name_length'] != 1:
                 # print "attention! an tag_name_length=%d (not 1) appears!" %  tag['name_length']
                 # print "at pac_num=%d, eDonkey=%s" %  (self.pac['info'].pac_num, eDonkey[offset-3:offset+7].encode('hex'))
-            # Èç¹ûtag_name_length²»ÊÇ1,ÕâÀï¾ÍÊÇ´íÎóµÄ!
+            # å¦‚æœtag_name_lengthä¸æ˜¯1,è¿™é‡Œå°±æ˜¯é”™è¯¯çš„!
             tag['name'], offset = self.get_type('int8', eDonkey, offset)
             if tag['type'] == KADEMLIA_TAGTYPE_HASH:
                 tag['value'], offset = self.get_type('ID', eDonkey, offset)
@@ -176,12 +178,12 @@ class EDonkey:
                 tag['value'], offset = self.get_type('bsob', eDonkey, offset)
             return tag, offset
         
-    # Ğ­ÒéÄÚÈİÍ³Ò»Ğ´ÈëlogÎÄ¼ş
+    # åè®®å†…å®¹ç»Ÿä¸€å†™å…¥logæ–‡ä»¶
     def write_log(self):
         logIO.write("====packet No.%d  at %f(s)\n" % (self.pac['info'].pac_num, self.pac['info'].time))
         logIO.write("   src_ip:%s    dst_ip:%s\n" % (self.pac['info'].src_ip, self.pac['info'].dst_ip))
     
-        # =================== Â·ÓÉ²éÕÒÇëÇó
+        # =================== è·¯ç”±æŸ¥æ‰¾è¯·æ±‚
         if self.pac['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ]:
             logIO.write(
 '''    message type : %s
@@ -190,7 +192,7 @@ class EDonkey:
     recipient id : %s
 ''' % (kademlia_msgs[self.pac['message_type']], self.pac['request_type'], self.pac['target_id'], self.pac['recipient_id']))
 
-        # =================== Â·ÓÉ²éÕÒÓ¦´ğ
+        # =================== è·¯ç”±æŸ¥æ‰¾åº”ç­”
         elif self.pac['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
             logIO.write(
 '''    message type : %s
@@ -208,7 +210,7 @@ class EDonkey:
         kad version : %d
 ''' % (i+1, len(self.pac['peers']), peer['peer_id'], peer['ip'], peer['udp_port'], peer['tcp_port'], peer['kad_version']))
 
-        # =================== ×ÊÔ´²éÕÒÇëÇó
+        # =================== èµ„æºæŸ¥æ‰¾è¯·æ±‚
         elif self.pac['message_type'] in [KADEMLIA2_SEARCH_KEY_REQ]:
             logIO.write(
 '''    message type : %s
@@ -216,7 +218,7 @@ class EDonkey:
     start position : %d
 ''' % (kademlia_msgs[self.pac['message_type']], self.pac['target_id'], self.pac['start_position']))
 
-        # =================== ×ÊÔ´²éÕÒÓ¦´ğ
+        # =================== èµ„æºæŸ¥æ‰¾åº”ç­”
         elif self.pac['message_type'] in [KADEMLIA_SEARCH_RES, KADEMLIA2_SEARCH_RES]:
             if self.pac['message_type'] in [KADEMLIA2_SEARCH_RES]:
                 logIO.write("   sender id : %s\n" % self.pac['sender_id'])
