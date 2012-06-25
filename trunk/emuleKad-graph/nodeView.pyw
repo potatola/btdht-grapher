@@ -17,7 +17,7 @@ import __builtin__
 __builtin__.__dict__['IGNORE_TIME'] = 30    #ignore reply packets after 10 seconds
 
 __builtin__.__dict__['Scene_time_multi'] = 40
-__builtin__.__dict__['Scene_height'] = 440
+__builtin__.__dict__['Scene_height'] = 420
 __builtin__.__dict__['Scene_width'] = __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_time_multi']
 __builtin__.__dict__['Scene_uptop'] = 440
 
@@ -172,7 +172,9 @@ class Node(QtGui.QGraphicsItem):
 
             line = QtCore.QLineF(self.mapFromItem(item, 0, 0),
                     QtCore.QPointF(0, 0))	#注意这里为了体现为排斥的力,计算线段是从别的点指向自己的
-            if line.length() < 5:	#只有两点距离近到25之内才开始排斥
+            
+            # 开始排斥的距离, 这里决定最终图中节点分散程度!!
+            if line.length() < 25:
                 dx = line.dx()
                 dy = line.dy()
                 l = 2.0 * (dx * dx + dy * dy)
