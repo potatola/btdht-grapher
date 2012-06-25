@@ -289,7 +289,6 @@ class Node(QtGui.QGraphicsItem):
             
     # text that will show in tooltip, namely ip, id, port, nodes...
     def setSelfDate(self, key, value):
-        print "key=%s, value=%s\n" % (key, value)
         self.data[key] = value
         
     def deActivate(self):
