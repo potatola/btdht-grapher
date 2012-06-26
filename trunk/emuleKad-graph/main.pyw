@@ -113,7 +113,10 @@ class Main(QMainWindow, Ui_MainWindow):
         analysor = Analyser(self.Nodes, self, 0)
         dispachor.edonkeyer.analyser = analysor
         
+        __builtin__.__dict__['node_move'] = True
+        print 1
         dispachor.work(0)
+        print 2
         
     @pyqtSignature("QString")
     def on_timeScopeSpin_valueChanged(self):

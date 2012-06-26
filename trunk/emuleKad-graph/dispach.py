@@ -6,6 +6,7 @@ from project_definations import *
 # from Packet_bencode import Bencode
 from Packet_eDonkey import EDonkey
 from PyQt4.QtGui import QApplication
+import __builtin__
 
 UDP_ONLY = 1
 BT_DHT_ONLY = 0
@@ -152,6 +153,7 @@ class Dispach:
 
         ftxt.close()
         fpcap.close()
+        __builtin__.__dict__['node_move'] = False
         
     def local_ip(self):
         fpcap = open(self.logLoc, 'rb')

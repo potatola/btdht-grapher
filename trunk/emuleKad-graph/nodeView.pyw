@@ -21,6 +21,8 @@ __builtin__.__dict__['Scene_height'] = 420
 __builtin__.__dict__['Scene_width'] = __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_time_multi']
 __builtin__.__dict__['Scene_uptop'] = 440
 
+__builtin__.__dict__['node_move'] = False
+
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
@@ -182,7 +184,7 @@ class Node(QtGui.QGraphicsItem):
                     xvel += (dx * 50.0) / l
                     yvel += (dy * 50.0) / l
                     
-            max_force = 3
+            max_force = 5
             break_flag = 0
             if xvel>max_force:
                 xvel = max_force
@@ -256,6 +258,9 @@ class Node(QtGui.QGraphicsItem):
         self.update()
        
     def setInitColor(self, color):
+        # 黑色是实验节点,一旦被标记,就不会被其他标记抹掉
+        if(self.init_color == 'black'):
+            return
         self.init_color = color
         self.changeColor(self.init_color)
 
@@ -413,6 +418,12 @@ class GraphWidget(QtGui.QGraphicsView):
             super(GraphWidget, self).keyPressEvent(event)
 
     def timerEvent(self, event):
+        if  __builtin__.__dict__['node_move'] == False:
+            self.killTimer(self.timerId)
+            self.timerId = 0
+            return
+            
+    
         nodes = [item for item in self.scene().items() if isinstance(item, Node)]
 
         for node in nodes:
@@ -432,8 +443,8 @@ class GraphWidget(QtGui.QGraphicsView):
     # def resizeEvent(self, event):
         # self.fitInView(self.scene().sceneRect(), 0)
 
-    def wheelEvent(self, event):
-        self.scaleView(math.pow(2.0, -event.delta() / 240.0))
+    # def wheelEvent(self, event):
+        # self.scaleView(math.pow(2.0, -event.delta() / 240.0))
         
     def drawBackground(self, painter, rect):
         # Shadow.

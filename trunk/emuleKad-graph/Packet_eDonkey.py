@@ -119,7 +119,14 @@ class EDonkey:
         if type == 'float32':
             return float(int(eDonkey[offset+3:offset-1:-1].encode('hex'), 16)), offset+4
         if type == 'ID':
-            return eDonkey[offset:offset+ID_LENGTH].encode('hex'), offset+ID_LENGTH
+            raw_id, offset = eDonkey[offset:offset+ID_LENGTH].encode('hex'), offset+ID_LENGTH
+            justed_id = ''
+            for i in range(0, 4*8, 8):
+                justed_id += raw_id[i+6:i+8]
+                justed_id += raw_id[i+4:i+6]
+                justed_id += raw_id[i+2:i+4]
+                justed_id += raw_id[i:i+2]
+            return justed_id, offset
         if type == 'string':
             string_len, offset = self.get_type('int16', eDonkey, offset)
             return eDonkey[offset:offset+string_len], offset+string_len
