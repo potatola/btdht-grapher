@@ -242,6 +242,8 @@ class Node(QtGui.QGraphicsItem):
             col = QtCore.Qt.blue
         elif self.color=='cyan':
             col = QtCore.Qt.cyan
+        elif self.color=='black':
+            col = QtCore.Qt.black
         else:
             col = self.color
 		

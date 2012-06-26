@@ -4,6 +4,7 @@
 '''
 from nodeView import *
 from project_definations import *
+from  xml.dom import  minidom
 import math
 import sys 
 reload(sys) 
@@ -47,7 +48,7 @@ class Analyser:
             self.canvas.scene().addLine(5, __builtin__.__dict__['Scene_height']-5, 5, 5)
             
             example_node = Node(self.canvas, Node_color['requested'], self.main_window)
-            example_node.setSelfDate(_fromUtf8('node type'), _fromUtf8('node that have been quested'))
+            example_node.setSelfDate(_fromUtf8('node type'), _fromUtf8('node that have been quested(if not line points to it, it may be in the bucket)'))
             self.canvas.scene().addItem(example_node)
             example_node.setPos(__builtin__.__dict__['Scene_width'], 30)
             example_node = Node(self.canvas, Node_color['returned'], self.main_window)
@@ -62,12 +63,28 @@ class Analyser:
             example_node.setSelfDate(_fromUtf8('node type'), _fromUtf8('node with value infomation'))
             self.canvas.scene().addItem(example_node)
             example_node.setPos(__builtin__.__dict__['Scene_width'], 60)
+            example_node = Node(self.canvas, Node_color['taged'], self.main_window)
+            example_node.setSelfDate(_fromUtf8('node type'), _fromUtf8('node taged in the .xml'))
+            self.canvas.scene().addItem(example_node)
+            example_node.setPos(__builtin__.__dict__['Scene_width'], 70)
             
             if type == 0:
                 #print 'the target Value is \'%s\'\n' % main_window.List.selectedItems()[0].text()
                 self.user_target = str(main_window.List.selectedItems()[0].text())
         else:
             self.user_target = 'af44869af3ac547adc8ee59af38ea0a74b641991'
+            
+        # ip列表显示特殊颜色
+        self.taged_ips = []
+        if type == 0:
+            try:
+                doc = minidom.parse('serviceip.xml') 
+                root = doc.documentElement
+                ips = root.getElementsByTagName('ip')
+                for ip in ips:
+                    self.taged_ips.append(ip.getElementsByTagName('insideip')[0].firstChild.nodeValue)
+            except:
+                pass
             
     def edonkey_target_list(self, request):
         target = request['target_id']
@@ -105,11 +122,12 @@ class Analyser:
             # count log if ty > 1
             ty = int(dst_id, 16)^int(str(self.user_target), 16)
             tmp_node.setSelfDate('requested in pac_num', request['info'].pac_num)
-            tmp_node.setSelfDate('ip', request['info'].src_ip)
+            tmp_node.setSelfDate('ip', request['info'].dst_ip)
             tmp_node.setSelfDate('id', dst_id)
             tmp_node.data['distance'] = str(int(dst_id  , 16)^int(str(self.user_target), 16)).zfill(40)
             ty = self.adjust_ty(ty, tx)
             tmp_node.setPos(tx, ty)
+            self.adjust_color(tmp_node, request['info'].dst_ip)
             src_node = tmp_node
             
     def edonkey_response(self, response):
@@ -144,6 +162,7 @@ class Analyser:
             tmp_node.data['distance'] = str(int(src_id, 16)^int(str(self.user_target), 16)).zfill(40)
             ty = self.adjust_ty(ty, tx)
             tmp_node.setPos(tx, ty)
+            self.adjust_color(tmp_node, response['info'].src_ip)
             src_node = tmp_node
             
         # 如果返回的是更近的nodes, 画出这些nodes
@@ -160,6 +179,8 @@ class Analyser:
                     tmp_node.setSelfDate('ip', peer['ip'])
                     tmp_node.setSelfDate('udp_port', peer['udp_port'])
                     tmp_node.setSelfDate('found_time', response['info'].time)
+                    
+                    self.adjust_color(tmp_node, peer['ip'])
         
                     tx = (response['info'].time - self.start_time) / __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_width']
                     # count log if ty > 1
@@ -198,6 +219,11 @@ class Analyser:
         ty = ((ty - self.Scene_uptop) / (__builtin__.__dict__['Scene_height'] - self.Scene_uptop)) * __builtin__.__dict__['Scene_height']
         ty = __builtin__.__dict__['Scene_height'] - ty
         return ty
+        
+    # given a list of ips(in a xml file), tag all nodes with ip in the list
+    def adjust_color(self, node, node_ip):
+        if node_ip in self.taged_ips:
+            node.setInitColor(Node_color['taged'])
 
 if __name__ == '__main__':
     #测试代码
