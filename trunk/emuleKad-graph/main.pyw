@@ -55,6 +55,7 @@ class Main(QMainWindow, Ui_MainWindow):
             self.workButton.setFocusPolicy(Qt.NoFocus)
             self.traceButton.setFocusPolicy(Qt.NoFocus)
         self.updateUi()
+        self.showMaximized()
         
     @pyqtSignature("QString")
     def on_IPLineEdit_textEdited(self):
