@@ -98,7 +98,7 @@ class Ui_MainWindow(object):
         self.timeScopeSpin.setMinimum(20)
         self.timeScopeSpin.setMaximum(120)
         self.timeScopeSpin.setSingleStep(10)
-        self.timeScopeSpin.setProperty("value", 30)
+        self.timeScopeSpin.setProperty("value", 60)
         self.timeScopeSpin.setObjectName(_fromUtf8("timeScopeSpin"))
         self.horizontalLayout_4.addWidget(self.timeScopeSpin)
         self.label_5 = QtGui.QLabel(self.centralwidget)

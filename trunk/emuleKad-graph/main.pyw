@@ -83,7 +83,7 @@ class Main(QMainWindow, Ui_MainWindow):
         self.List.setRowCount(0)
         self.ListCount = 0
         self.List.setColumnCount(3)
-        self.List.setHorizontalHeaderLabels(['ID', _fromUtf8('类型'), _fromUtf8('距离(/160)')])
+        self.List.setHorizontalHeaderLabels(['ID', _fromUtf8('类型'), _fromUtf8('距离(/128)')])
         trace = self.traceLineEdit.text()
         trace = unicode(trace.toUtf8(),'utf8', 'ignore').encode('gb2312')
         try:
