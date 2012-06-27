@@ -13,6 +13,7 @@ from PyQt4 import QtCore, QtGui
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 import __builtin__
+from project_definations import *
 
 __builtin__.__dict__['IGNORE_TIME'] = 60    #ignore reply packets after 10 seconds
 
@@ -241,6 +242,8 @@ class Node(QtGui.QGraphicsItem):
             col = QtCore.Qt.green
         elif self.color=='blue':
             col = QtCore.Qt.blue
+        elif self.color=='red':
+            col = QtCore.Qt.red
         elif self.color=='cyan':
             col = QtCore.Qt.cyan
         elif self.color=='black':
@@ -257,8 +260,8 @@ class Node(QtGui.QGraphicsItem):
         self.update()
        
     def setInitColor(self, color):
-        # 黑色是实验节点,一旦被标记,就不会被其他标记抹掉
-        if(self.init_color == 'black'):
+        # 对于实验节点,一旦被标记,就不会被其他标记抹掉
+        if(self.init_color == Node_color['taged']):
             return
         self.init_color = color
         self.changeColor(self.init_color)
@@ -306,11 +309,15 @@ class Node(QtGui.QGraphicsItem):
     def content(self, all=False):
         content = ''
         line_count = 0
-        for item in self.data:
-            if item in ['nodes', 'values', 'peers', 'results']:
-                continue
-            content += item+' : '+str(self.data[item])+'\n'
-            line_count += 1 
+        # for item in self.data:
+            # if item in ['nodes', 'values', 'peers', 'results']:
+                # continue
+            # content += item+' : '+str(self.data[item])+'\n'
+            # line_count += 1 
+        for item in ['id', 'ip', 'udp_port', 'distance', 'found_time', 'returned in pac_num', 'requested in pac_num', 'answered in pac_num']:
+            if item in self.data:
+                content += item+' : '+str(self.data[item])+'\n'
+                line_count += 1 
         if 'nodes' in self.data:
             content += '\nnodes:\n'
             line_count += 1 

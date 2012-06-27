@@ -49,4 +49,4 @@ class packet_info(object):
     src_ip=''; src_port=0; dst_ip=''; dst_port=0;    
     
 # 不同类型节点对应的颜色    
-Node_color = {'returned':'', 'responsed':'yellow', 'host':'green', 'timeout':'red', 'peers':'blue', 'requested':'cyan', 'taged':'black'}
+Node_color = {'returned':'', 'responsed':'yellow', 'host':'green', 'timeout':'red', 'peers':'blue', 'requested':'cyan', 'taged':'red'}
