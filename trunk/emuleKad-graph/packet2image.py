@@ -109,7 +109,7 @@ class Analyser:
         if request['target_id'] != self.user_target:
             return
         elif self.start_time == -1:
-            self.start_time = request['info'].time
+            self.start_time = request['info'].time - 0.2
         
         # 记录被查询节点的ip对应的id号
         if request['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ]:
@@ -219,9 +219,9 @@ class Analyser:
             self.Scene_uptop -= __builtin__.__dict__['Scene_height']/14
             self.show_percentage += 10
             # a vertical line indicating that it'll show one more part.
-            tempText = self.canvas.scene().addText(_fromUtf8(str(self.show_percentage)+'%'))
-            tempText.setPos(tx, 15 + self.show_percentage)
-            self.canvas.scene().addLine(tx, 10, tx, __builtin__.__dict__['Scene_height'])
+            # tempText = self.canvas.scene().addText(_fromUtf8(str(self.show_percentage)+'%'))
+            # tempText.setPos(tx, 15 + self.show_percentage)
+            # self.canvas.scene().addLine(tx, 10, tx, __builtin__.__dict__['Scene_height'])
         ty = ((ty - self.Scene_uptop) / (__builtin__.__dict__['Scene_height'] - self.Scene_uptop)) * __builtin__.__dict__['Scene_height']
         ty = __builtin__.__dict__['Scene_height'] - ty
         
