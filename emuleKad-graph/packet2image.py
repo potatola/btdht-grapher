@@ -35,6 +35,8 @@ class Analyser:
         self.targets = []
         self.ip2id = {}
         
+        self.pos_rand = 0
+        
         #画布
         if canvas != None:
             self.canvas = canvas
@@ -107,6 +109,7 @@ class Analyser:
             return
         elif self.start_time == -1:
             self.start_time = request['info'].time
+        
         # 记录被查询节点的ip对应的id号
         if request['message_type'] in [KADEMLIA_REQ, KADEMLIA2_REQ]:
             self.ip2id[request['info'].dst_ip] = request['recipient_id']
@@ -126,7 +129,7 @@ class Analyser:
             tmp_node.setSelfDate('id', dst_id)
             tmp_node.data['distance'] = str(int(dst_id  , 16)^int(str(self.user_target), 16)).zfill(40)
             ty = self.adjust_ty(ty, tx)
-            tmp_node.setPos(tx, ty)
+            tmp_node.setPos(tx, ty + self.get_pos_rand())
             self.adjust_color(tmp_node, request['info'].dst_ip)
             src_node = tmp_node
             
@@ -159,13 +162,14 @@ class Analyser:
             tmp_node.setSelfDate('answered in pac_num', response['info'].pac_num)
             tmp_node.setSelfDate('ip', response['info'].src_ip)
             tmp_node.setSelfDate('id', src_id)
-            tmp_node.data['distance'] = str(int(src_id, 16)^int(str(self.user_target), 16)).zfill(40)
+            tmp_node.data['distance'] = ty.__hex__()[2:-1].zfill(32)
             ty = self.adjust_ty(ty, tx)
-            tmp_node.setPos(tx, ty)
+            tmp_node.setPos(tx, ty + self.get_pos_rand())
             self.adjust_color(tmp_node, response['info'].src_ip)
             src_node = tmp_node
             
         # 如果返回的是更近的nodes, 画出这些nodes
+        tx_child = src_node.pos().x() + 50 # 子结点放在父节点右边固定距离处
         if response['message_type'] in [KADEMLIA_RES, KADEMLIA2_RES]:
             src_node.setSelfDate('peers', response['peers'])
             src_node.setInitColor(Node_color['responsed'])
@@ -182,12 +186,12 @@ class Analyser:
                     
                     self.adjust_color(tmp_node, peer['ip'])
         
-                    tx = (response['info'].time - self.start_time) / __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_width']
+                    # tx = (response['info'].time - self.start_time) / __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_width']
                     # count log if ty > 1
                     ty = int(str(peer['peer_id']), 16)^int(str(self.user_target), 16)
-                    tmp_node.data['distance'] = ty.__hex__()[2:].zfill(40)
-                    ty = self.adjust_ty(ty, tx)
-                    tmp_node.setPos(tx, ty)
+                    tmp_node.data['distance'] = ty.__hex__()[2:-1].zfill(32)
+                    ty = self.adjust_ty(ty, tx_child)
+                    tmp_node.setPos(tx_child, ty)
                 
                     self.nodes_by_ip[peer['ip']] = tmp_node
                     
@@ -199,6 +203,7 @@ class Analyser:
                     self.canvas.update()
                     self.main_window.update()
                     
+        # 如果是search请求的返回,添加返回的result信息
         if response['message_type'] in [KADEMLIA_SEARCH_RES, KADEMLIA2_SEARCH_RES]:
             src_node.setSelfDate('results', response['results'])
             src_node.setInitColor(Node_color['peers'])
@@ -224,6 +229,12 @@ class Analyser:
     def adjust_color(self, node, node_ip):
         if node_ip in self.taged_ips:
             node.setInitColor(Node_color['taged'])
+            
+    def get_pos_rand(self):
+        self.pos_rand += 10
+        if self.pos_rand >=140:
+            self.pos_rand = 0
+        return self.pos_rand
 
 if __name__ == '__main__':
     #测试代码

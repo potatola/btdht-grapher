@@ -23,8 +23,8 @@ class Main(QMainWindow, Ui_MainWindow):
         #添加图形显示的画布
         self.Nodes = GraphWidget(self)
         self.verticalLayout_3.insertWidget(2, self.Nodes)
-        self.verticalLayout_3.setStretch(2, 110)
-        self.verticalLayout_3.setStretch(3, 110)
+        self.verticalLayout_3.setStretch(2, 170)
+        self.verticalLayout_3.setStretch(3, 90)
         
         # the searching targets list table
         # self.List = QTableWidget(0, 3, self)
