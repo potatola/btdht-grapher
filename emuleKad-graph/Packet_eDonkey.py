@@ -8,7 +8,14 @@ import sys
 reload(sys) 
 sys.setdefaultencoding('utf8')
 
-logIO = open('Packet_eDonkey.log', 'w')
+class fake_ftxt:
+        def write(self, somewords):
+                pass
+        def close(self):
+                pass
+
+# logIO = open('Packet_eDonkey.log', 'w')
+logIO = fake_ftxt()
 
 
 class EDonkey:
@@ -140,10 +147,9 @@ class EDonkey:
             ip[2], offset = self.get_type('int8', eDonkey, offset)
             ip[3], offset = self.get_type('int8', eDonkey, offset)
             ip_str = ''
-            for i in range(3):
-                ip_str += str(ip[i])+'.'
-            ip_str += str(ip[i])
-            return ip_str, offset
+            for i in range(4):
+                ip_str += '.'+str(ip[3-i])
+            return ip_str[1:], offset
         if type == 'peer':
             peer = {}
             peer['peer_id'], offset = self.get_type('ID', eDonkey, offset)

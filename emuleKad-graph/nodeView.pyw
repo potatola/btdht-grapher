@@ -294,7 +294,7 @@ class Node(QtGui.QGraphicsItem):
     def activate(self):
         self.changeColor(self.active_color)
         # calculate the position on desktop
-        QtGui.QToolTip.showText(QtCore.QPoint(self.graph.mainWindow.x()+self.graph.x()+(self.x()+20)/(__builtin__.__dict__['Scene_width']+40)*self.graph.width(), self.graph.mainWindow.y()+self.graph.y()+(self.y()+20)/__builtin__.__dict__['Scene_height']*self.graph.height()), _fromUtf8(self.content()))
+        # QtGui.QToolTip.showText(QtCore.QPoint(self.graph.mainWindow.x()+self.graph.x()+(self.x()+20)/(__builtin__.__dict__['Scene_width']+40)*self.graph.width(), self.graph.mainWindow.y()+self.graph.y()+(self.y()+20)/__builtin__.__dict__['Scene_height']*self.graph.height()), _fromUtf8(self.content()))
             
     # text that will show in tooltip, namely ip, id, port, nodes...
     def setSelfDate(self, key, value):
@@ -302,7 +302,7 @@ class Node(QtGui.QGraphicsItem):
         
     def deActivate(self):
         self.changeColor(self.init_color)
-        QtGui.QToolTip.hideText()
+        # QtGui.QToolTip.hideText()
         
     def content(self, all=False):
         content = ''
