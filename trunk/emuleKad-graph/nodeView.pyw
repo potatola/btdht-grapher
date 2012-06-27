@@ -17,7 +17,7 @@ import __builtin__
 __builtin__.__dict__['IGNORE_TIME'] = 60    #ignore reply packets after 10 seconds
 
 __builtin__.__dict__['Scene_time_multi'] = 40
-__builtin__.__dict__['Scene_height'] = 400
+__builtin__.__dict__['Scene_height'] = 420
 __builtin__.__dict__['Scene_width'] = __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_time_multi']
 __builtin__.__dict__['Scene_uptop'] = 440
 __builtin__.__dict__['ver_only'] = True
