@@ -1,6 +1,6 @@
 ﻿from PyQt4.QtCore import *
 from PyQt4.QtGui import *
-from ui_mainGui1 import *
+from ui_mainGui2 import *
 from nodeView import *
 from dispach import *
 from Packet_eDonkey import *
@@ -23,6 +23,8 @@ class Main(QMainWindow, Ui_MainWindow):
         #添加图形显示的画布
         self.Nodes = GraphWidget(self)
         self.verticalLayout_3.insertWidget(2, self.Nodes)
+        self.verticalLayout_3.setStretch(2, 110)
+        self.verticalLayout_3.setStretch(3, 110)
         
         # the searching targets list table
         # self.List = QTableWidget(0, 3, self)
@@ -114,21 +116,20 @@ class Main(QMainWindow, Ui_MainWindow):
         dispachor.edonkeyer.analyser = analysor
         
         __builtin__.__dict__['node_move'] = True
-        print 1
+        __builtin__.__dict__['ver_only'] = self.verOnlyBox.isChecked()
         dispachor.work(0)
-        print 2
         
     @pyqtSignature("QString")
     def on_timeScopeSpin_valueChanged(self):
         __builtin__.__dict__['IGNORE_TIME'] = self.timeScopeSpin.value()
         __builtin__.__dict__['Scene_width'] = __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_time_multi']
-        self.Nodes.scene().setSceneRect(0, 0, __builtin__.__dict__['Scene_width'], __builtin__.__dict__['Scene_height'])
+        self.Nodes.scene().setSceneRect(-40, -10, __builtin__.__dict__['Scene_width']+10, __builtin__.__dict__['Scene_height']+10)
         
     @pyqtSignature("QString")
     def on_timeMultiSpin_valueChanged(self):
         __builtin__.__dict__['Scene_time_multi'] = self.timeMultiSpin.value()
         __builtin__.__dict__['Scene_width'] = __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_time_multi']
-        self.Nodes.scene().setSceneRect(0, 0, __builtin__.__dict__['Scene_width'], __builtin__.__dict__['Scene_height'])
+        self.Nodes.scene().setSceneRect(-40, -10, __builtin__.__dict__['Scene_width'], __builtin__.__dict__['Scene_height'])
         
     def updateUi(self):
         enable = not (self.IPLineEdit.text().isEmpty() or self.traceLineEdit.text().isEmpty())

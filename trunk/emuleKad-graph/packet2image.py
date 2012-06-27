@@ -40,7 +40,7 @@ class Analyser:
             self.canvas = canvas
             self.main_window = main_window
             self.Scene_uptop = __builtin__.__dict__['Scene_height']
-            self.show_percentage = 0
+            self.show_percentage = 0    # 显示最大距离的一定百分比距离范围
             
             self.canvas.scene().clear()
             

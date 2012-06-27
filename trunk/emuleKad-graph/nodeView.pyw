@@ -17,9 +17,10 @@ import __builtin__
 __builtin__.__dict__['IGNORE_TIME'] = 60    #ignore reply packets after 10 seconds
 
 __builtin__.__dict__['Scene_time_multi'] = 40
-__builtin__.__dict__['Scene_height'] = 420
+__builtin__.__dict__['Scene_height'] = 400
 __builtin__.__dict__['Scene_width'] = __builtin__.__dict__['IGNORE_TIME'] * __builtin__.__dict__['Scene_time_multi']
 __builtin__.__dict__['Scene_uptop'] = 440
+__builtin__.__dict__['ver_only'] = True
 
 __builtin__.__dict__['node_move'] = False
 
@@ -176,31 +177,29 @@ class Node(QtGui.QGraphicsItem):
                     QtCore.QPointF(0, 0))	#注意这里为了体现为排斥的力,计算线段是从别的点指向自己的
             
             # 开始排斥的距离, 这里决定最终图中节点分散程度!!
-            if line.length() < 25:
+            if line.length() < 30:
                 dx = line.dx()
                 dy = line.dy()
                 l = 2.0 * (dx * dx + dy * dy)
                 if l > 0:
                     xvel += (dx * 50.0) / l
                     yvel += (dy * 50.0) / l
+            if __builtin__.__dict__['ver_only']:
+                xvel = 0
                     
-            max_force = 5
+            max_force = 20
             break_flag = 0
             if xvel>max_force:
                 xvel = max_force
-                #print '>>>>force is %d %d'%(xvel, yvel)
                 break_flag = 1
             if xvel<-max_force:
                 xvel = -max_force
-                #print '>>>>force is %d %d'%(xvel, yvel)
                 break_flag = 1
             if yvel>max_force:
                 yvel = max_force
-                #print '>>>>force is %d %d'%(xvel, yvel)
                 break_flag = 1
             if yvel<-max_force:
                 yvel = -max_force
-                #print '>>>>force is %d %d'%(xvel, yvel)
                 break_flag = 1
             if break_flag == 1:
                 break
@@ -371,7 +370,7 @@ class GraphWidget(QtGui.QGraphicsView):
 
         scene = QtGui.QGraphicsScene(self)
         scene.setItemIndexMethod(QtGui.QGraphicsScene.NoIndex)
-        scene.setSceneRect(0, 0, __builtin__.__dict__['Scene_width'], __builtin__.__dict__['Scene_height'])
+        scene.setSceneRect(-40, -10, __builtin__.__dict__['Scene_width']+10, __builtin__.__dict__['Scene_height']+10)
         self.setScene(scene)
         self.setCacheMode(QtGui.QGraphicsView.CacheBackground)
         self.setViewportUpdateMode(QtGui.QGraphicsView.BoundingRectViewportUpdate)
@@ -440,8 +439,6 @@ class GraphWidget(QtGui.QGraphicsView):
             self.killTimer(self.timerId)
             self.timerId = 0
             
-    # def resizeEvent(self, event):
-        # self.fitInView(self.scene().sceneRect(), 0)
 
     # def wheelEvent(self, event):
         # self.scaleView(math.pow(2.0, -event.delta() / 240.0))
