@@ -14,7 +14,7 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 import __builtin__
 
-__builtin__.__dict__['IGNORE_TIME'] = 30    #ignore reply packets after 10 seconds
+__builtin__.__dict__['IGNORE_TIME'] = 60    #ignore reply packets after 10 seconds
 
 __builtin__.__dict__['Scene_time_multi'] = 40
 __builtin__.__dict__['Scene_height'] = 420
@@ -328,7 +328,7 @@ class Node(QtGui.QGraphicsItem):
                 value_count += 1
                 content += '    '+str(value_count)+' : '+value['ip']+'   '+str(value['port'])+'\n'
                 line_count += 1 
-                if not all and line_count >= 16:
+                if not all and line_count >= 12:
                     content += '    ......(click to see all)'
                     return content
         if 'peers' in self.data:
@@ -353,7 +353,7 @@ class Node(QtGui.QGraphicsItem):
                     tag_count += 1
                     content += "        tag[%d/%d]  %d  [%d] = %s\n" % (tag_count, len(result['tags']), tag['type'], tag['name'], tag['value'])
                     line_count += 1
-                    if not all and line_count >= 16:
+                    if not all and line_count >= 12:
                         content += '    ......(click to see all)'
                         return content
             

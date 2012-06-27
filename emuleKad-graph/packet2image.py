@@ -82,7 +82,7 @@ class Analyser:
                 root = doc.documentElement
                 ips = root.getElementsByTagName('ip')
                 for ip in ips:
-                    self.taged_ips.append(ip.getElementsByTagName('insideip')[0].firstChild.nodeValue)
+                    self.taged_ips.append(ip.getElementsByTagName('outsideip')[0].firstChild.nodeValue)
             except:
                 pass
             

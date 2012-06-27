@@ -126,7 +126,7 @@ class EDonkey:
                 justed_id += raw_id[i+4:i+6]
                 justed_id += raw_id[i+2:i+4]
                 justed_id += raw_id[i:i+2]
-            return justed_id, offset
+            return justed_id.upper(), offset
         if type == 'string':
             string_len, offset = self.get_type('int16', eDonkey, offset)
             return eDonkey[offset:offset+string_len], offset+string_len
