@@ -1,6 +1,6 @@
 <serviceip>
     <ip>
-        <insideip>106.252.28.28</insideip>
+        <insideip>172.16.28.1</insideip>
         <outsideip>175.184.162.239</outsideip>
         <isp>CU</isp>
     </ip>
