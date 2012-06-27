@@ -7,6 +7,7 @@ from project_definations import *
 from  xml.dom import  minidom
 import math
 import sys 
+import random
 reload(sys) 
 sys.setdefaultencoding('utf8')
 import __builtin__
@@ -127,9 +128,9 @@ class Analyser:
             tmp_node.setSelfDate('requested in pac_num', request['info'].pac_num)
             tmp_node.setSelfDate('ip', request['info'].dst_ip)
             tmp_node.setSelfDate('id', dst_id)
-            tmp_node.data['distance'] = str(int(dst_id  , 16)^int(str(self.user_target), 16)).zfill(40)
+            tmp_node.data['distance'] = ty.__hex__()[2:-1].zfill(32)
             ty = self.adjust_ty(ty, tx)
-            tmp_node.setPos(tx, ty + self.get_pos_rand())
+            tmp_node.setPos(tx, ty)
             self.adjust_color(tmp_node, request['info'].dst_ip)
             src_node = tmp_node
             
@@ -164,7 +165,7 @@ class Analyser:
             tmp_node.setSelfDate('id', src_id)
             tmp_node.data['distance'] = ty.__hex__()[2:-1].zfill(32)
             ty = self.adjust_ty(ty, tx)
-            tmp_node.setPos(tx, ty + self.get_pos_rand())
+            tmp_node.setPos(tx, ty)
             self.adjust_color(tmp_node, response['info'].src_ip)
             src_node = tmp_node
             
@@ -223,6 +224,20 @@ class Analyser:
             self.canvas.scene().addLine(tx, 10, tx, __builtin__.__dict__['Scene_height'])
         ty = ((ty - self.Scene_uptop) / (__builtin__.__dict__['Scene_height'] - self.Scene_uptop)) * __builtin__.__dict__['Scene_height']
         ty = __builtin__.__dict__['Scene_height'] - ty
+        
+        # 添加随即因素
+        self.pos_rand += 10
+        if self.pos_rand >= 100:
+            self.pos_rand = 0
+        if ty > __builtin__.__dict__['Scene_height'] / 2:
+            ty += random.randint(-100, 100) - self.pos_rand
+        else:
+            ty += random.randint(-100, 100) + self.pos_rand
+        if ty <= 10:
+            ty += random.randint(0, 100)
+        if ty >= __builtin__.__dict__['Scene_height'] - 10:
+            ty -= random.randint(0, 100)
+        
         return ty
         
     # given a list of ips(in a xml file), tag all nodes with ip in the list
@@ -230,11 +245,6 @@ class Analyser:
         if node_ip in self.taged_ips:
             node.setInitColor(Node_color['taged'])
             
-    def get_pos_rand(self):
-        self.pos_rand += 10
-        if self.pos_rand >=140:
-            self.pos_rand = 0
-        return self.pos_rand
 
 if __name__ == '__main__':
     #测试代码
